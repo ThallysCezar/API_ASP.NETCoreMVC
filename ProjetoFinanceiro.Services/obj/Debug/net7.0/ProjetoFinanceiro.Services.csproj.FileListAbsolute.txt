@@ -1,0 +1,17 @@
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjetoFinanceiro.Services.deps.json
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjetoFinanceiro.Services.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjetoFinanceiro.Services.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjetoFinanceiro.Services.csproj.AssemblyReference.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjetoFinanceiro.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjetoFinanceiro.Services.AssemblyInfoInputs.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjetoFinanceiro.Services.AssemblyInfo.cs
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjetoFinanceiro.Services.csproj.CoreCompileInputs.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjetoFinanceiro.Services.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\refint\ProjetoFinanceiro.Services.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjetoFinanceiro.Services.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ref\ProjetoFinanceiro.Services.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjetoFinanceiro.Domain.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjetoFinanceiro.Infrastructure.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjetoFinanceiro.Domain.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjetoFinanceiro.Infrastructure.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjetoFinanceiro.Services.csproj.CopyComplete
