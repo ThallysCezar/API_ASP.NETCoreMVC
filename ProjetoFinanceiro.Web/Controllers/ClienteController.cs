@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using ProjetoFinanceiro.Web.Models;
 using System.Net.Http;
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProjetoFinanceiro.Web.Controllers
 {
@@ -88,6 +89,7 @@ namespace ProjetoFinanceiro.Web.Controllers
 
 
                 string url = ENDPOINT;
+                TempData["SuccessMessage"] = "Seller successfully created!";
                 HttpResponseMessage response = await httpClient.PostAsync(url, byteArrayContent);
 
                 if (!response.IsSuccessStatusCode)
@@ -97,7 +99,7 @@ namespace ProjetoFinanceiro.Web.Controllers
             }
             catch (Exception)
             {
-
+                TempData["ErroMessage"] = $"Oops! We could not create the Seller, please try again, error detail:  ERROR";
                 throw;
             }
         }
@@ -119,6 +121,7 @@ namespace ProjetoFinanceiro.Web.Controllers
                 byteArrayContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
 
                 string url = ENDPOINT;
+                TempData["SuccessMessage"] = "Seller successfully edited!";
                 HttpResponseMessage response = await httpClient.PutAsync(url, byteArrayContent);
 
                 if (!response.IsSuccessStatusCode)
@@ -128,6 +131,7 @@ namespace ProjetoFinanceiro.Web.Controllers
             }
             catch (Exception)
             {
+                TempData["ErroMessage"] = $"Oops! We could not edit the Seller, please try again, error detail:  ERROR";
                 throw;
             }
         }
@@ -146,10 +150,14 @@ namespace ProjetoFinanceiro.Web.Controllers
         {
             int id = Int32.Parse(ClienteId);
             string url = $"{ENDPOINT}{id}";
+            TempData["SuccessMessage"] = "Seller successfully readed!";
             HttpResponseMessage response = await httpClient.DeleteAsync(url);
 
             if (!response.IsSuccessStatusCode)
+            {
+                TempData["ErroMessage"] = $"Oops! We could not read the Seller, please try again, error detail: ERROR";
                 ModelState.AddModelError(null, "Erro ao processar a solicitação");
+            }
 
 
             return RedirectToAction("Index");
@@ -163,6 +171,7 @@ namespace ProjetoFinanceiro.Web.Controllers
             {
                 ClienteViewModel result = null;
                 string url = $"{ENDPOINT}{id}";
+                TempData["SuccessMessage"] = "Seller successfully updated!";
                 HttpResponseMessage response = await httpClient.GetAsync(url);
                 if (response.IsSuccessStatusCode)
                 {
@@ -174,7 +183,7 @@ namespace ProjetoFinanceiro.Web.Controllers
             }
             catch (Exception)
             {
-
+                TempData["ErroMessage"] = $"Oops! We could not update the Seller, please try again, error detail: ERROR";
                 throw;
             }
         }
