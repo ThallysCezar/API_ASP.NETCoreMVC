@@ -3,31 +3,23 @@
 @{
     ViewData["Title"] = "Details";
 }
-<div>
-    <h4>Detalhes</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-    </dl>
+
+<h1>People</h1>
+<h1 class="display-3 text-center">@ViewData["Title"]</h1>
+<div class="container mx-auto text-center">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title p-y-1">Id: @Html.DisplayFor(model => model.Id)</h3>
+                    <h6 class="card-text p-y-1">Name: @Html.DisplayFor(model => model.Nome)</h6>
+                    <h6 class="card-text p-y-1">E-mail: @Html.DisplayFor(model => model.Email)</h6>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div>
-    @Html.ActionLink("Atualizar", "Edit", new { id = Model.Id }) |
-    <a asp-action="Listar">Voltar</a>
+<div class="text-center mt-3">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary" role="button">Edit</a>
+    <a asp-action="Index" role="button" class="btn btn-secondary">Back</a>
 </div>

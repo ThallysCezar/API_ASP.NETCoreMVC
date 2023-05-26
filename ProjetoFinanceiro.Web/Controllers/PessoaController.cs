@@ -46,11 +46,6 @@ namespace ProjetoFinanceiro.Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Listar()
-        {
             return View(_pessoas);
         }
 
