@@ -1,49 +1,47 @@
-# GameChess
-Jogo de xadrez aprendido no curso da Udemy é um programa em C# que permite jogar xadrez em modo console. Ele possui regras e movimentos válidos do jogo de xadrez, além de jogadas especiais, como Roque, En Passant e a promoção do Peão em uma Dama.
+# APIConnect
 
-O código foi desenvolvido utilizando princípios de orientação a objetos e separação de responsabilidades em diferentes classes, como Tabuleiro, Peça, Jogador, Movimento, entre outras. Além disso, o código também utiliza conceitos avançados de programação, como polimorfismo, herança e sobercada de operadores.
+This is a test project to create a CRUD (Create, Read, Update, Delete) system for adding and removing customers, as well as adding and removing employees. The goal of this project is to demonstrate the use of the following technologies:
 
-O jogo é apresentado em modo console, com representações gráficas do tabuleiro e das peças em caracteres ASCII.
+- .NET 7.0: Used to develop the API.
+- ASP.NET Core MVC: Used to develop the user interface.
+- MySQL: Used as the database to store the information.
+- ADO.NET: Used for the data access layer, instead of Entity Framework Core, in order to explore the direct use of ADO.NET for learning purposes.
 
-OBS: O código está com algumas coisas a melhorar, porém, ainda irei corrigir, como nomes de variáveis em português e variáveis com nomes não tão claros, assim como o Clean Code recomenda.
+The project was developed using a layered architecture, following good development practices. Each layer plays a specific role in the system and contributes to the organization and separation of responsibilities.
 
-## Instalação
+The project's layers are as follows:
 
-Para instalar e usar o projeto, basta baixar o projeto e rodar o projeto no VS Code ou Visual Studio mesmo
+Domain Layer: In this layer, the concepts and business rules of the system are contained. It represents the fundamental entities and behaviors of the application domain.
 
-## Uso
+Infrastructure Layer: This layer is responsible for providing infrastructure resources for the system. It deals with technical aspects, such as database access, external connections, integrations with external systems, among others.
 
-- O projeto tem como regras o próprio jogo de xadrez, logo, todas as peças tem suas funções e movimentos de acordo com sua característia, como Peão, Cavalo, Torre, Dama, Rei e Bispo.
-- Cada letra representa uma peça:
-    - Peão = "P"
-    - Torre = "T"
-    - Cavalo = "C"
-    - Bispo = "B"
-    - Rei = "R"
-    - Dama = "D"
-- Para jogar o jogo de xadrez, precisa saber qual é a linha e a coluna que deseja mover a peça, pois o jogo é baseado em matriz:
+Services Layer: The services layer houses the application's business logic. It coordinates the operations between the different entities of the domain, implementing the system's use cases and business rules.
 
+API Layer: The API layer is responsible for exposing the system's services through an application programming interface (API). It receives requests from clients and directs calls to the appropriate services, returning the corresponding responses.
 
-<p align="center">
-  <img src="Assets/Img/image.png" alt="Descrição da imagem">
-</p>
+Web Layer: The web layer is responsible for the system's user interface (UI). It uses ASP.NET Core MVC to create the pages and manage user interaction. This layer allows data presentation and interaction with the system through forms, buttons, and other graphical interfaces.
 
-    1. O qual teremos que escolher uma coluna(a, b, c, d, e, f, g, h) e uma linha(1, 2, 3, 4, 5, 6, ,7, 8) para mover a peça,
-    por exemplo, para mover o primeiro Peão da cor branca da esquerda para direita, teremos que escolher a2(linha + coluna).
-    2. Depois escolher para onde ele irá, porém foi implementado um método o qual ele diz quais os movimentos possíveis,
-    então basta escolher, como: a2 para a4.
-    3. Logo, ficará, "Origem: a2", "Destino: a4", então o peão da casa **a2** se moverá para casa **a4**
-    4. O projeto foi feito com a arquitetura padrão camadas, o qual fiz com as camadas:
-        - Tabuleiro (lógica do tabuleiro)
-        - Console (lógica de programação para as peças)
-        - Xadrez (lógica do tabuleiro com as regras do xadrez)
+## Features
 
-- Foi implementando também algumas jogadas especiais, como:
-    - Roque: que é uma jogada onde o Rei e a Torre são movidos juntos, com o objetivo de proteger o Rei e colocar <br>
-    a Torre em uma posição melhor. Existem dois tipos de Roque, o curso e o grande, dependendo da direção que a Torre é movida;
-    - En Passant: que é uma jogada onde um peão avança duas casas a partir da posição inicial, e um peão adversário <br>
-    que esteja ao lado pode capturá-lo como se ele tivesse avançado apenas uma casa.
-    - Promoção: A promoção do peão para Dama ou Rainha é uma jogada onde um peão que chega na última linha do tabuleiro <br>
-    pode ser promovido a uma peça mais poderosa, normalmente a Dama ou a Rainha, dando ao jogador uma vantagem estratégica.
+- Add clients: Allows you to add information about clients, such as name, address, and contact.- 
+- Remove clients: Enables you to remove customers from the system.
+- Add collaborators: Allows you to add information about the collaborators, such as name, position, and department.
+- Remove collaborators: Enables you to remove collaborators from the system.
 
+## Configuration/Use
+
+- Make sure you have the .NET 7.0 SDK installed on your machine.
+- Clone this repository.
+- Open the project in Visual Studio or your preferred IDE.
+- Set up the connection to the MySQL database in the appsettings.json file, providing the correct information for the "ConnectionString" property.
+- Run the database creation script in MySQL to create the required structure.
+- Compile and run the project.
+
+## Contribution
+
+Contributions are welcome! If you have any suggestions, bug fixes or improvements for this project, feel free to create a pull request.
+
+## License
+
+This project is licensed under the MIT License.
 
