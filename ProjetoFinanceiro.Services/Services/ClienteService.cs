@@ -1,40 +1,35 @@
 ﻿using ProjetoFinanceiro.Domain.Entities;
 using ProjetoFinanceiro.Infrastructure.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjetoFinanceiro.Services.Services
 {
-    public class ClienteService
+    public class ClientService
     {
-        private readonly IClienteRepository _clienteRepository;
+        private readonly IRepositoryClient _clientRepository;
 
-        public ClienteService(IClienteRepository clienteRepository)
+        public ClientService(IRepositoryClient clientRepository)
         {
-            _clienteRepository = clienteRepository;
+            _clientRepository = clientRepository;
         }
 
-        public List<Cliente> Listar()
+        public List<Client> Listar()
         {
-            return _clienteRepository.Listar();
+            return _clientRepository.Listar();
         }
 
-        public Cliente Pesquisar(int id)
+        public Client Pesquisar(int id)
         {
-            return _clienteRepository.Pesquisar(id);
+            return _clientRepository.Pesquisar(id);
         }
 
-        public void Salvar(Cliente cliente)
+        public void Salvar(Client cliente)
         {
-            _clienteRepository.Salvar(cliente);
+            _clientRepository.Salvar(cliente);
         }
 
-        public void Atualizar(Cliente cliente)
+        public void Atualizar(Client cliente)
         {
-            _clienteRepository.Atualizar(cliente);
+            _clientRepository.Atualizar(cliente);
         }
 
         public void Excluir(int id)
@@ -43,7 +38,7 @@ namespace ProjetoFinanceiro.Services.Services
             if (id == 0) 
                 throw new Exception("É necessário informar o Id para realizar a exclusão");
 
-            _clienteRepository.Excluir(id);
+            _clientRepository.Excluir(id);
         }
     }
 }

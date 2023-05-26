@@ -10,16 +10,16 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteId)
+            @Html.DisplayNameFor(model => model.ClientId)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteId)
+            @Html.DisplayFor(model => model.ClientId)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
+            @Html.DisplayNameFor(model => model.Name)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
+            @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Cpf)
@@ -30,7 +30,7 @@
     </dl>
     
     <form asp-action="Delete">
-        <input asp-for="ClienteId" type="hidden"/>
+        <input asp-for="ClientId" type="hidden"/>
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Index">Voltar</a>
     </form>

@@ -4,11 +4,11 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
 {
     public interface IContext
     {
-        public void CreateCliente(Cliente cliente);
-        public List<Cliente> ReadClientes();
-        public Cliente ReadClientes(int id);
-        public void UpdateCliente(Cliente cliente);
-        public void DeleteCliente(int id);
+        public void CreateClient(Client client);
+        public List<Client> ReadClients();
+        public Client ReadClients(int id);
+        public void UpdateClient(Client client);
+        public void DeleteClient(int id);
         public int NextId();
     }
 }

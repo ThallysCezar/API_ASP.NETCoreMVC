@@ -17,9 +17,9 @@ builder.Services.AddSingleton<IApiConfig>(x => x.GetRequiredService<IOptions<Api
 
 #region Injecao de Dependecias
 // repositorios
-builder.Services.AddSingleton<IClienteRepository, ClienteRepository>();
+builder.Services.AddSingleton<IRepositoryClient, RepositoryClient>();
 //servicos
-builder.Services.AddScoped<ClienteService>();
+builder.Services.AddScoped<ClientService>();
 #endregion
 
 builder.Services.AddControllers();

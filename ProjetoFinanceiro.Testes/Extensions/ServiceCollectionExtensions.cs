@@ -26,13 +26,13 @@ namespace ProjetoFinanceiro.Testes.Extensions
             services.AddScoped<AppTestePrincipal>();
 
             // Registro da dependência
-            services.AddScoped<IClienteRepository, ClienteRepository>();
+            services.AddScoped<IRepositoryClient, RepositoryClient>();
 
             //testes
             services.AddScoped<RepositorioTeste>();
 
             //servicos
-            services.AddScoped<ClienteService>();
+            services.AddScoped<ClientService>();
             services.AddScoped<ServicoTeste>();
             services.AddScoped<ConnectionTest>();
         }

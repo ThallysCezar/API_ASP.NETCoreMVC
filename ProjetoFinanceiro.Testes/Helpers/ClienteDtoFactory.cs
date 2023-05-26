@@ -1,25 +1,19 @@
 ﻿using ProjetoFinanceiro.Domain.DTOs;
-using ProjetoFinanceiro.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjetoFinanceiro.Testes.Helpers
 {
     public static class ClienteDtoFactory
     {
-        public static ClienteDto GetClienteDto()
+        public static DtoClient GetClienteDto()
         {
-            ClienteDto cliente = new ClienteDto
+            DtoClient client = new DtoClient
             {
-                ClienteId = 1,
-                Nome = "Thallys Cezar",
+                ClientId = 1,
+                Name = "Thallys Cezar",
                 Cpf = "12345678901"
             };
 
-            return cliente;
+            return client;
         }
     }
 }

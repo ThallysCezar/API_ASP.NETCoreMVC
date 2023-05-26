@@ -6,11 +6,11 @@ namespace ProjetoFinanceiro.Testes.Services
 {
     public class ServicoTeste
     {
-        private readonly ClienteService _clienteService;
+        private readonly ClientService _clientService;
 
-        public ServicoTeste(ClienteService clienteService)
+        public ServicoTeste(ClientService clientService)
         {
-            _clienteService = clienteService;
+            _clientService = clientService;
         }
 
         public void Execute()
@@ -34,10 +34,10 @@ namespace ProjetoFinanceiro.Testes.Services
         private void ValidarListagemClientes()
         {
             Console.WriteLine("\nTeste Camada de Servicos, Validar Listagem Clientes");
-            List<Cliente> clientes = _clienteService.Listar();
-            foreach (Cliente cliente in clientes)
+            List<Client> clients = _clientService.Listar();
+            foreach (Client client in clients)
             {
-                Console.WriteLine($"ID: {cliente.ClienteId}, Nome: {cliente.Nome}");
+                Console.WriteLine($"ID: {client.ClientId}, Nome: {client.Name}");
             }
         }
 
@@ -45,33 +45,33 @@ namespace ProjetoFinanceiro.Testes.Services
         {
             Console.WriteLine("\nTeste Camada de Servicos, Validar Pesquisa Cliente");
             int id = 1;
-            Cliente cliente = _clienteService.Pesquisar(id);
-            Console.WriteLine($"ID: {cliente.ClienteId}, Nome: {cliente.Nome}");
+            Client client = _clientService.Pesquisar(id);
+            Console.WriteLine($"ID: {client.ClientId}, Nome: {client.Name}");
         }
 
         private void ValidarCadastroCliente()
         {
             Console.WriteLine("\nTeste Camada de Servicos, Validar Cadastro Cliente");
             
-            Cliente cliente = ClienteFactory.GetCliente();
-            int id = cliente.ClienteId;
+            Client client = ClienteFactory.GetCliente();
+            int id = client.ClientId;
 
-            _clienteService.Salvar(cliente);
+            _clientService.Salvar(client);
             
-            Cliente objPesquisa = _clienteService.Pesquisar(id);
-            Console.WriteLine($"ID: {objPesquisa.ClienteId}, Nome: {objPesquisa.Nome}");
+            Client objPesquisa = _clientService.Pesquisar(id);
+            Console.WriteLine($"ID: {objPesquisa.ClientId}, Nome: {objPesquisa.Name}");
         }
 
         private void ValidarAtualizacaoCliente()
         {
             Console.WriteLine("\nTeste Camada de Servicos, Validar Atualizacao Cliente");
             int id = 1;
-            Cliente cliente = _clienteService.Pesquisar(id);
-            cliente.Nome = "Gustavo Ricardo";
-            _clienteService.Atualizar(cliente);
+            Client client = _clientService.Pesquisar(id);
+            client.Name = "Gustavo Ricardo";
+            _clientService.Atualizar(client);
 
-            Cliente objPesquisa = _clienteService.Pesquisar(id);
-            Console.WriteLine($"ID: {objPesquisa.ClienteId}, Nome: {objPesquisa.Nome}");
+            Client objPesquisa = _clientService.Pesquisar(id);
+            Console.WriteLine($"ID: {objPesquisa.ClientId}, Nome: {objPesquisa.Name}");
 
         }
 
@@ -79,9 +79,9 @@ namespace ProjetoFinanceiro.Testes.Services
         {
             Console.WriteLine("\nTeste Camada de Servicos, Validar Exclusao Cliente");
             int id = 12;
-            _clienteService.Excluir(id);
+            _clientService.Excluir(id);
 
-            Cliente cliente = _clienteService.Pesquisar(id);
+            Client cliente = _clientService.Pesquisar(id);
         }
     }
 }

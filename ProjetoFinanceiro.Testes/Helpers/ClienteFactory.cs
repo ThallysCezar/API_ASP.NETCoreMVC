@@ -4,24 +4,24 @@ namespace ProjetoFinanceiro.Testes.Helpers
 {
     public class ClienteFactory
     {
-        public static Cliente GetCliente()
+        public static Client GetCliente()
         {
-            Cliente cliente = new Cliente
+            Client cliente = new Client
             {
-                ClienteId = 1,
-                Nome = "Thallys Cezar",
+                ClientId = 1,
+                Name = "Thallys Cezar",
                 Cpf = "12345678901"
             };
 
             return cliente;
         }
 
-        public static Cliente GetNovoCliente()
+        public static Client GetNovoCliente()
         {
-            Cliente cliente = new Cliente
+            Client cliente = new Client
             {
-                ClienteId = 12,
-                Nome = "Maravilhandra",
+                ClientId = 12,
+                Name = "Maravilhandra",
                 Cpf = "87653912721"
             };
 

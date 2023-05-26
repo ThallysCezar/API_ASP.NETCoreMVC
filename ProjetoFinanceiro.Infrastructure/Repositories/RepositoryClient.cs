@@ -6,13 +6,13 @@ using ProjetoFinanceiro.Infrastructure.Contexts;
 
 namespace ProjetoFinanceiro.Infrastructure.Repositories
 {
-    public class ClienteRepository : IClienteRepository
+    public class RepositoryClient : IRepositoryClient
     {
         private readonly IContext _context;
         private readonly IApiConfig _apiConfig;
 
 
-        public ClienteRepository(IApiConfig apiConfig)
+        public RepositoryClient(IApiConfig apiConfig)
         {
             _apiConfig = apiConfig;
 
@@ -28,33 +28,33 @@ namespace ProjetoFinanceiro.Infrastructure.Repositories
             }
         }
 
-        public void Atualizar(Cliente cliente)
+        public void Atualizar(Client cliente)
         {
-            _context.UpdateCliente(cliente);
+            _context.UpdateClient(cliente);
         }
 
         public void Excluir(int id)
         {
-            _context.DeleteCliente(id);
+            _context.DeleteClient(id);
         }
 
-        public List<Cliente> Listar()
+        public List<Client> Listar()
         {
-            return _context.ReadClientes();
+            return _context.ReadClients();
         }
 
-        public Cliente Pesquisar(int id)
+        public Client Pesquisar(int id)
         {
-            return _context.ReadClientes(id);
+            return _context.ReadClients(id);
         }
 
-        public void Salvar(Cliente cliente)
+        public void Salvar(Client cliente)
         {
             if (ConfiguracoesApp.SELECTED_DATABASE.Equals(DatabaseType.Fake))
             {
-                cliente.ClienteId = _context.NextId();
+                cliente.ClientId = _context.NextId();
             }
-            _context.CreateCliente(cliente);
+            _context.CreateClient(cliente);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MySqlX.XDevAPI;
 using ProjetoFinanceiro.Domain.Configuration;
 using ProjetoFinanceiro.Domain.DTOs;
 using ProjetoFinanceiro.Domain.Entities;
@@ -10,20 +11,20 @@ namespace ProjetoFinanceiro.Api.Controllers
     [ApiController]
     public class ClienteController : ControllerBase
     {
-        private readonly ClienteService _clienteService;
+        private readonly ClientService _clientService;
 
-        public ClienteController(ClienteService clienteService, IApiConfig apiConfig)
+        public ClienteController(ClientService clientService, IApiConfig apiConfig)
         {
-            _clienteService = clienteService;
+            _clientService = clientService;
         }
 
         [HttpGet]
-        public List<ClienteDto> Get()
+        public List<DtoClient> Get()
         {
             try
             {
-                List<Cliente> clientes = _clienteService.Listar();
-                List<ClienteDto> clientesDto = clientes != null ? Cliente.ConverterParaDto(clientes) : null;
+                List<Domain.Entities.Client> client = _clientService.Listar();
+                List<DtoClient> clientesDto = client != null ? Domain.Entities.Client.ConverterParaDto(client) : null;
 
                 return clientesDto;
             }
@@ -36,12 +37,12 @@ namespace ProjetoFinanceiro.Api.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public ClienteDto Get(int id)
+        public DtoClient Get(int id)
         {
             try
             {
-                Cliente cliente = _clienteService.Pesquisar(id);
-                ClienteDto dto = cliente != null ? cliente.ConverterParaDto() : null;
+                Domain.Entities.Client client = _clientService.Pesquisar(id);
+                DtoClient dto = client != null ? client.ConverterParaDto() : null;
                 return dto;
             }
             catch (Exception)
@@ -55,7 +56,7 @@ namespace ProjetoFinanceiro.Api.Controllers
         {
             try
             {
-                _clienteService.Excluir(id);
+                _clientService.Excluir(id);
                 return $"Cliente: excluído com sucesso, Id: {id}";
             }
             catch (Exception)
@@ -65,13 +66,13 @@ namespace ProjetoFinanceiro.Api.Controllers
         }
 
         [HttpPost]
-        public string Post([Bind("Nome, Cpf")] ClienteDto clienteDto)
+        public string Post([Bind("Nome, Cpf")] DtoClient clienteDto)
         {
             try
             {
-                Cliente cliente = clienteDto.ConverterParaEntidade();
-                _clienteService.Salvar(cliente);
-                return $"Cliente: {cliente.Nome} cadastrado com sucesso, Id: {cliente.ClienteId}";
+                Domain.Entities.Client client = clienteDto.ConverterParaEntidade();
+                _clientService.Salvar(client);
+                return $"Cliente: {client.Name} cadastrado com sucesso, Id: {client.ClientId}";
             }
             catch (Exception)
             {
@@ -80,13 +81,13 @@ namespace ProjetoFinanceiro.Api.Controllers
         }
 
         [HttpPut]
-        public string Put([FromBody] ClienteDto clienteDto)
+        public string Put([FromBody] DtoClient clienteDto)
         {
             try
             {
-                Cliente cliente = clienteDto.ConverterParaEntidade();
-                _clienteService.Atualizar(cliente);
-                return $"Cliente: {cliente.Nome} atualizado com sucesso, Id: {cliente.ClienteId}";
+                Domain.Entities.Client client = clienteDto.ConverterParaEntidade();
+                _clientService.Atualizar(client);
+                return $"Cliente: {client.Name} atualizado com sucesso, Id: {client.ClientId}";
             }
             catch (Exception)
             {

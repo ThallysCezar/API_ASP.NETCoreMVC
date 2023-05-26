@@ -1,13 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ProjetoFinanceiro.Web.Models;
-using System.Net.Http;
 using System.Text;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProjetoFinanceiro.Web.Controllers
 {
-    public class ClienteController : Controller
+    public class ClientController : Controller
     {
         #region Propriedades
 
@@ -20,7 +18,7 @@ namespace ProjetoFinanceiro.Web.Controllers
         #endregion
 
         #region Construtores
-        public ClienteController(IConfiguration configuration)
+        public ClientController(IConfiguration configuration)
         {
             _configuration = configuration;
             ENDPOINT = _configuration["AppConfig:EndPoints:Url_Api"];
@@ -78,11 +76,11 @@ namespace ProjetoFinanceiro.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("Nome, Cpf")] ClienteViewModel cliente)
+        public async Task<IActionResult> Create([Bind("Name, Cpf")] ClienteViewModel client)
         {
             try
             {
-                string json = JsonConvert.SerializeObject(cliente);
+                string json = JsonConvert.SerializeObject(client);
                 byte[] buffer = Encoding.UTF8.GetBytes(json);
                 ByteArrayContent byteArrayContent = new ByteArrayContent(buffer);
                 byteArrayContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
@@ -106,16 +104,16 @@ namespace ProjetoFinanceiro.Web.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
-            ClienteViewModel cliente = await Pesquisar(id);
-            return View(cliente);
+            ClienteViewModel client = await Pesquisar(id);
+            return View(client);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit([Bind("ClienteId, Nome, Cpf")] ClienteViewModel cliente)
+        public async Task<IActionResult> Edit([Bind("ClientId, Name, Cpf")] ClienteViewModel client)
         {
             try
             {
-                string json = JsonConvert.SerializeObject(cliente);
+                string json = JsonConvert.SerializeObject(client);
                 byte[] buffer = Encoding.UTF8.GetBytes(json);
                 ByteArrayContent byteArrayContent = new ByteArrayContent(buffer);
                 byteArrayContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
@@ -138,17 +136,17 @@ namespace ProjetoFinanceiro.Web.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            ClienteViewModel cliente = await Pesquisar(id);
-            if (cliente == null)
+            ClienteViewModel client = await Pesquisar(id);
+            if (client == null)
                 return NotFound();
 
-            return View(cliente);
+            return View(client);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(string ClienteId)
+        public async Task<IActionResult> Delete(string ClientId)
         {
-            int id = Int32.Parse(ClienteId);
+            int id = Int32.Parse(ClientId);
             string url = $"{ENDPOINT}{id}";
             TempData["SuccessMessage"] = "Seller successfully readed!";
             HttpResponseMessage response = await httpClient.DeleteAsync(url);
@@ -165,6 +163,7 @@ namespace ProjetoFinanceiro.Web.Controllers
         #endregion
 
         #region MétodosAuxiliares
+
         private async Task<ClienteViewModel> Pesquisar(int id)
         {
             try
@@ -187,7 +186,6 @@ namespace ProjetoFinanceiro.Web.Controllers
                 throw;
             }
         }
-
 
         #endregion
     }

@@ -40,24 +40,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Pessoa/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXENyZWF0ZS5jc2h0bWw=
+[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/People/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Pessoa/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXERlbGV0ZS5jc2h0bWw=
+[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/People/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Pessoa/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXERldGFpbHMuY3NodG1s
+[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/People/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Pessoa/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEVkaXQuY3NodG1s
+[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/People/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Pessoa/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEluZGV4LmNzaHRtbA==
+[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/People/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVvcGxlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Shared/Error.cshtml]

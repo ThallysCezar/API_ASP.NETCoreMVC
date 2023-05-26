@@ -1,8 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using MySqlX.XDevAPI;
-using MySqlX.XDevAPI.Common;
 using ProjetoFinanceiro.Domain.Configuration;
-using ProjetoFinanceiro.Domain.Entities;
 using ProjetoFinanceiro.Domain.Enums;
 using ProjetoFinanceiro.Infrastructure.Connections;
 using ProjetoFinanceiro.Infrastructure.Queries;
@@ -29,7 +26,7 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
         #endregion
 
         #region Criacao/Create
-        public void CreateCliente(Cliente cliente)
+        public void CreateClient(Domain.Entities.Client client)
         {
             MySqlConnection cn = null;
 
@@ -38,8 +35,8 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
                 string sql = SqlManager.GetSql(SqlQueryType.CADASTRAR_CLIENTE);
                 cn = _connectionManager.GetConnection();
                 MySqlCommand cmd = new MySqlCommand(sql, cn);
-                cmd.Parameters.Add("@nome_cli", MySqlDbType.VarChar).Value = cliente.Nome;
-                cmd.Parameters.Add("cpf_cli", MySqlDbType.VarChar).Value = cliente.Cpf;
+                cmd.Parameters.Add("@nome_cli", MySqlDbType.VarChar).Value = client.Name;
+                cmd.Parameters.Add("cpf_cli", MySqlDbType.VarChar).Value = client.Cpf;
                 cn.Open();
                 cmd.ExecuteNonQuery();
 
@@ -58,9 +55,9 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
         #endregion
 
         #region Leitura/Read
-        public List<Cliente> ReadClientes()
+        public List<Domain.Entities.Client> ReadClients()
         {
-            List<Cliente> result = new List<Cliente>();
+            List<Domain.Entities.Client> result = new List<Domain.Entities.Client>();
 
             MySqlConnection cn = null;
 
@@ -75,13 +72,13 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
 
                 da.Fill(ds, "consultaCliente");
 
-                foreach (DataRow registro in ds.Tables["consultaCliente"].Rows)
+                foreach (DataRow register in ds.Tables["consultaCliente"].Rows)
                 {
-                    Cliente cliente = new Cliente
+                    Domain.Entities.Client cliente = new Domain.Entities.Client
                     {
-                        ClienteId = Int32.Parse(registro["cod_cli"].ToString()),
-                        Nome = registro["nome_cli"].ToString(),
-                        Cpf = registro["cpf_cli"].ToString()
+                        ClientId = int.Parse(register["cod_cli"].ToString()),
+                        Name = register["nome_cli"].ToString(),
+                        Cpf = register["cpf_cli"].ToString()
                     };
 
                     result.Add(cliente);
@@ -103,10 +100,10 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
             }
         }
 
-        public Cliente ReadClientes(int id)
+        public Domain.Entities.Client ReadClients(int id)
 
         {
-            Cliente result = null;
+            Domain.Entities.Client result = null;
             MySqlConnection cn = null;
 
             try
@@ -126,10 +123,10 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
 
                 foreach (DataRow item in registros)
                 {
-                    result = new Cliente
+                    result = new Domain.Entities.Client
                     {
-                        ClienteId = Int32.Parse(item["cod_cli"].ToString()),
-                        Nome = item["nome_cli"].ToString(),
+                        ClientId = int.Parse(item["cod_cli"].ToString()),
+                        Name = item["nome_cli"].ToString(),
                         Cpf = item["cpf_cli"].ToString()
                     };
                 }
@@ -152,7 +149,7 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
         #endregion
 
         #region Atualizacao/Update
-        public void UpdateCliente(Cliente cliente)
+        public void UpdateClient(Domain.Entities.Client client)
         {
             MySqlConnection cn = null;
 
@@ -162,9 +159,9 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
                 cn = _connectionManager.GetConnection();
 
                 MySqlCommand cmd = new MySqlCommand(sql, cn);
-                cmd.Parameters.Add("@nome_cli", MySqlDbType.VarChar).Value = cliente.Nome;
-                cmd.Parameters.Add("@cpf_cli", MySqlDbType.VarChar).Value = cliente.Cpf;
-                cmd.Parameters.Add("@cod_cli", MySqlDbType.Int32).Value = cliente.ClienteId;
+                cmd.Parameters.Add("@nome_cli", MySqlDbType.VarChar).Value = client.Name;
+                cmd.Parameters.Add("@cpf_cli", MySqlDbType.VarChar).Value = client.Cpf;
+                cmd.Parameters.Add("@cod_cli", MySqlDbType.Int32).Value = client.ClientId;
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
@@ -186,7 +183,7 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
         #endregion
 
         #region Exclusao/Delete
-        public void DeleteCliente(int id)
+        public void DeleteClient(int id)
         {
             MySqlConnection cn = null;
 

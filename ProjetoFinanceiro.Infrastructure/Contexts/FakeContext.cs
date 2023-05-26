@@ -9,91 +9,91 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
 {
     public class FakeContext : IContext
     {
-        private List<Cliente> _clientes;
+        private List<Client> _clientes;
 
         public FakeContext() => LoadData();
 
-        public void CreateCliente(Cliente cliente)
+        public void CreateClient(Client cliente)
         {
             _clientes.Add(cliente);
         }
 
-        public List<Cliente> ReadClientes()
+        public List<Client> ReadClients()
         {
            return _clientes
-                .OrderBy(p => p.ClienteId)
+                .OrderBy(p => p.ClientId)
                 .ToList();
         }
 
-        public Cliente ReadClientes(int id)
+        public Client ReadClients(int id)
         {
-            Cliente result = _clientes.FirstOrDefault(p => p.ClienteId.Equals(id));
+            Client result = _clientes.FirstOrDefault(p => p.ClientId.Equals(id));
 
             return result;
         }
 
-        public void UpdateCliente(Cliente cliente)
+        public void UpdateClient(Client cliente)
         {
-            Cliente objPesquisa = ReadClientes(cliente.ClienteId);
+            Client objPesquisa = ReadClients(cliente.ClientId);
             _clientes.Remove(objPesquisa);
 
-            objPesquisa = new Cliente 
+            objPesquisa = new Client 
             {
-                ClienteId = cliente.ClienteId,
-                Nome = !string.IsNullOrEmpty(cliente.Nome) ? cliente.Nome : objPesquisa.Nome,
+                ClientId = cliente.ClientId,
+                Name = !string.IsNullOrEmpty(cliente.Name) ? cliente.Name : objPesquisa.Name,
                 Cpf = !string.IsNullOrEmpty(cliente.Cpf) ? cliente.Cpf : objPesquisa.Cpf
             };
             _clientes.Add(objPesquisa);
 
         }
 
-        public void DeleteCliente(int id)
+        public void DeleteClient(int id)
         {
-            Cliente cliente = ReadClientes(id);
+            Client cliente = ReadClients(id);
             if(cliente != null) _clientes.Remove(cliente);
         }
 
 
         private void LoadData()
         {
-            _clientes = new List<Cliente>();
+            _clientes = new List<Client>();
 
-            Cliente cliente = new Cliente
+            Client cliente = new Client
             {
-                ClienteId = 1,
-                Nome = "Thallys Cezar",
+                ClientId = 1,
+                Name = "Thallys Cezar",
                 Cpf = "12345678901"
             };
             _clientes.Add(cliente);
 
-            cliente = new Cliente
+            cliente = new Client
             {
-                ClienteId = 2,
-                Nome = "Thullyo Cezar",
+                ClientId = 2,
+                Name = "Thullyo Cezar",
                 Cpf = "09876543210"
             };
             _clientes.Add(cliente);
 
-            cliente = new Cliente
+            cliente = new Client
             {
-                ClienteId = 3,
-                Nome = "Tulio Cezar",
+                ClientId = 3,
+                Name = "Tulio Cezar",
                 Cpf = "12312312312"
             };
             _clientes.Add(cliente);
 
-            cliente = new Cliente
+            cliente = new Client
             {
-                ClienteId = 4,
-                Nome = "Thaynara Cezar",
+                ClientId = 4,
+                Name = "Thaynara Cezar",
                 Cpf = "12341234123"
             };
             _clientes.Add(cliente);
 
-            cliente = new Cliente
+            cliente = new Client
             {
-                ClienteId = 5,
-                Nome = "Luatine Cezar",
+                ClientId = 5,
+                Name = "Luatine Cezar",
                 Cpf = "12345123451"
             };
             _clientes.Add(cliente);
@@ -101,7 +101,7 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
 
         public int NextId()
         {
-            int id = _clientes.Max(p => p.ClienteId);
+            int id = _clientes.Max(p => p.ClientId);
             id++;
             return id;
         }

@@ -26,19 +26,19 @@ namespace ProjetoFinanceiro.Testes.Contexts
 
         private void TestarListagem()
         {
-            List<Cliente> clientes = _context.ReadClientes();
-            foreach (Cliente cliente in clientes)
+            List<Client> clientes = _context.ReadClients();
+            foreach (Client cliente in clientes)
             {
-                Console.WriteLine($"Id: {cliente.ClienteId}, Nome:{cliente.Nome}");
+                Console.WriteLine($"Id: {cliente.ClientId}, Nome:{cliente.Name}");
             }
         }
         private void TestarInclusao()
         {
-            Cliente cliente = ClienteFactory.GetNovoCliente();
-            cliente.ClienteId = 30;
-            _context.CreateCliente(cliente);
+            Client cliente = ClienteFactory.GetNovoCliente();
+            cliente.ClientId = 30;
+            _context.CreateClient(cliente);
 
-            _context.ReadClientes(cliente.ClienteId);
+            _context.ReadClients(cliente.ClientId);
         }
     }
 }
