@@ -1,0 +1,12 @@
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\bin\Debug\net7.0\ProjectFinance.Domain.deps.json
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\bin\Debug\net7.0\ProjectFinance.Domain.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\bin\Debug\net7.0\ProjectFinance.Domain.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\obj\Debug\net7.0\ProjectFinance.Domain.csproj.AssemblyReference.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\obj\Debug\net7.0\ProjectFinance.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\obj\Debug\net7.0\ProjectFinance.Domain.AssemblyInfoInputs.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\obj\Debug\net7.0\ProjectFinance.Domain.AssemblyInfo.cs
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\obj\Debug\net7.0\ProjectFinance.Domain.csproj.CoreCompileInputs.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\obj\Debug\net7.0\ProjectFinance.Domain.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\obj\Debug\net7.0\refint\ProjectFinance.Domain.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\obj\Debug\net7.0\ProjectFinance.Domain.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Domain\obj\Debug\net7.0\ref\ProjectFinance.Domain.dll

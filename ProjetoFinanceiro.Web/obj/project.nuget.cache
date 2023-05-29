@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S+qrFnLpkGc2KWcZHysZZZhj0Ofv10d8UpFFRqDKw1wbSL4iNlEdXZ3+2lY10wbHuRoIUMAFMeTkDANWNvDkEg==",
+  "dgSpecHash": "6pK1xrBJixVo6afz2HW/eu+E0cxuJqRRtnhHcz2wkHzwvDENAygRrCe23OaO2n3c6gZdmHR/pQ93+WphyjJaXQ==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjetoFinanceiro.Web.csproj",
+  "projectFilePath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjectFinance.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",

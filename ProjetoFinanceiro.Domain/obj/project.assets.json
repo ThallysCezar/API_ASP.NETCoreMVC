@@ -15,9 +15,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjetoFinanceiro.Domain.csproj",
-      "projectName": "ProjetoFinanceiro.Domain",
-      "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjetoFinanceiro.Domain.csproj",
+      "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj",
+      "projectName": "ProjectFinance.Domain",
+      "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj",
       "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
       "outputPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,0 +1,15 @@
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\bin\Debug\net7.0\ProjectFinance.Infrastructure.deps.json
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\bin\Debug\net7.0\ProjectFinance.Infrastructure.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\bin\Debug\net7.0\ProjectFinance.Infrastructure.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\bin\Debug\net7.0\ProjectFinance.Domain.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\bin\Debug\net7.0\ProjectFinance.Domain.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\obj\Debug\net7.0\ProjectFinance.Infrastructure.csproj.AssemblyReference.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\obj\Debug\net7.0\ProjectFinance.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\obj\Debug\net7.0\ProjectFinance.Infrastructure.AssemblyInfoInputs.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\obj\Debug\net7.0\ProjectFinance.Infrastructure.AssemblyInfo.cs
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\obj\Debug\net7.0\ProjectFinance.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\obj\Debug\net7.0\ProjectFinance.Infrastructure.csproj.CopyComplete
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\obj\Debug\net7.0\ProjectFinance.Infrastructure.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\obj\Debug\net7.0\refint\ProjectFinance.Infrastructure.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\obj\Debug\net7.0\ProjectFinance.Infrastructure.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Infrastructure\obj\Debug\net7.0\ref\ProjectFinance.Infrastructure.dll

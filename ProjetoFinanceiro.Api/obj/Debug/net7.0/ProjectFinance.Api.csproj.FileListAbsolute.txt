@@ -1,0 +1,7 @@
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Api\obj\Debug\net7.0\ProjectFinance.Api.csproj.AssemblyReference.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Api\obj\Debug\net7.0\ProjectFinance.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Api\obj\Debug\net7.0\ProjectFinance.Api.AssemblyInfoInputs.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Api\obj\Debug\net7.0\ProjectFinance.Api.AssemblyInfo.cs
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Api\obj\Debug\net7.0\ProjectFinance.Api.csproj.CoreCompileInputs.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Api\obj\Debug\net7.0\ProjectFinance.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Api\obj\Debug\net7.0\ProjectFinance.Api.MvcApplicationPartsAssemblyInfo.cache

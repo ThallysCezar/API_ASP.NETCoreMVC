@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JLRv4/82IiFGfHeCzPaNJgP5h5AXANs/2QKYezDHsw2UP1iAo3TVlIV96Jbd0Y/KQe4+IIlk7JYkR/5IVQiQ7w==",
+  "dgSpecHash": "TIRc1G3DCrQY4kl2MkU2DVixRc8ail/M80wAuh0Rt7WcS4J4E0iygzE1mVP5XRM5ooq2qcD9KcbT2Izu/sNbrg==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\ProjetoFinanceiro.Services.csproj",
+  "projectFilePath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\ProjectFinance.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",

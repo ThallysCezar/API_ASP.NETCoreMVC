@@ -1,0 +1,17 @@
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjectFinance.Services.deps.json
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjectFinance.Services.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjectFinance.Services.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjectFinance.Domain.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjectFinance.Infrastructure.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjectFinance.Domain.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\bin\Debug\net7.0\ProjectFinance.Infrastructure.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjectFinance.Services.csproj.AssemblyReference.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjectFinance.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjectFinance.Services.AssemblyInfoInputs.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjectFinance.Services.AssemblyInfo.cs
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjectFinance.Services.csproj.CoreCompileInputs.cache
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjectFinance.Services.csproj.CopyComplete
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjectFinance.Services.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\refint\ProjectFinance.Services.dll
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ProjectFinance.Services.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Services\obj\Debug\net7.0\ref\ProjectFinance.Services.dll

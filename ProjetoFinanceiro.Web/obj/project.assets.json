@@ -9075,9 +9075,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjetoFinanceiro.Web.csproj",
-      "projectName": "ProjetoFinanceiro.Web",
-      "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjetoFinanceiro.Web.csproj",
+      "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjectFinance.Web.csproj",
+      "projectName": "ProjectFinance.Web",
+      "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjectFinance.Web.csproj",
       "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
       "outputPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\obj\\",
       "projectStyle": "PackageReference",

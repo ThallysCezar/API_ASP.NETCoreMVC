@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using ProjetoFinanceiro.Web.Models;
+using ProjectFinance.Web.Models;
 using System.Text;
 
-namespace ProjetoFinanceiro.Web.Controllers
+namespace ProjectFinance.Web.Controllers
 {
     public class ClientController : Controller
     {
@@ -15,9 +15,10 @@ namespace ProjetoFinanceiro.Web.Controllers
 
         private readonly IConfiguration _configuration;
 
-        #endregion
+        #endregion Propriedades
 
         #region Construtores
+
         public ClientController(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -27,9 +28,10 @@ namespace ProjetoFinanceiro.Web.Controllers
             httpClient.BaseAddress = new Uri(ENDPOINT);
         }
 
-        #endregion
+        #endregion Construtores
 
         #region Actions
+
         public async Task<IActionResult> Index()
         {
             try
@@ -48,7 +50,6 @@ namespace ProjetoFinanceiro.Web.Controllers
                 }
 
                 return View(clientes);
-
             }
             catch (Exception ex)
             {
@@ -84,7 +85,6 @@ namespace ProjetoFinanceiro.Web.Controllers
                 byte[] buffer = Encoding.UTF8.GetBytes(json);
                 ByteArrayContent byteArrayContent = new ByteArrayContent(buffer);
                 byteArrayContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-
 
                 string url = ENDPOINT;
                 TempData["SuccessMessage"] = "Seller successfully created!";
@@ -157,10 +157,10 @@ namespace ProjetoFinanceiro.Web.Controllers
                 ModelState.AddModelError(null, "Erro ao processar a solicitação");
             }
 
-
             return RedirectToAction("Index");
         }
-        #endregion
+
+        #endregion Actions
 
         #region MétodosAuxiliares
 
@@ -187,6 +187,6 @@ namespace ProjetoFinanceiro.Web.Controllers
             }
         }
 
-        #endregion
+        #endregion MétodosAuxiliares
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gv9T0dwO7KHu/IMeUzSWiIpfend8VBcxFMGpSVdX4pq33zNRqG0dzMj/ZHuYT/X687Oomwqlee2pmYGJdNmFmA==",
+  "dgSpecHash": "PF6+IF6IeIub47R5PAIX/yg0a0EiIdiFHxK5MyWBxB8ChuwXXVglQNUihmSgxW3TkMPc8sX/l3yjBTKaRXfcmw==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjetoFinanceiro.Domain.csproj",
+  "projectFilePath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

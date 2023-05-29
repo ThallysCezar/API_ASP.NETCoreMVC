@@ -599,14 +599,14 @@
           }
         }
       },
-      "ProjetoFinanceiro.Domain/1.0.0": {
+      "ProjectFinance.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/ProjetoFinanceiro.Domain.dll": {}
+          "bin/placeholder/ProjectFinance.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ProjetoFinanceiro.Domain.dll": {}
+          "bin/placeholder/ProjectFinance.Domain.dll": {}
         }
       }
     }
@@ -1995,16 +1995,16 @@
         "version.txt"
       ]
     },
-    "ProjetoFinanceiro.Domain/1.0.0": {
+    "ProjectFinance.Domain/1.0.0": {
       "type": "project",
-      "path": "../ProjetoFinanceiro.Domain/ProjetoFinanceiro.Domain.csproj",
-      "msbuildProject": "../ProjetoFinanceiro.Domain/ProjetoFinanceiro.Domain.csproj"
+      "path": "../ProjetoFinanceiro.Domain/ProjectFinance.Domain.csproj",
+      "msbuildProject": "../ProjetoFinanceiro.Domain/ProjectFinance.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "MySql.Data >= 8.0.33",
-      "ProjetoFinanceiro.Domain >= 1.0.0",
+      "ProjectFinance.Domain >= 1.0.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
@@ -2016,9 +2016,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjetoFinanceiro.Infrastructure.csproj",
-      "projectName": "ProjetoFinanceiro.Infrastructure",
-      "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjetoFinanceiro.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj",
+      "projectName": "ProjectFinance.Infrastructure",
+      "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
       "outputPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
@@ -2042,8 +2042,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjetoFinanceiro.Domain.csproj": {
-              "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjetoFinanceiro.Domain.csproj"
+            "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj": {
+              "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj"
             }
           }
         }

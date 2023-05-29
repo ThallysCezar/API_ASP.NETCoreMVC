@@ -16,24 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjetoFinanceiro.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Cliente/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGUuY3NodG1s
+[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Client/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Cliente/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZWxldGUuY3NodG1s
+[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Client/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Cliente/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0LmNzaHRtbA==
+[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Client/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Cliente/Get.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxHZXQuY3NodG1s
+[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Client/Get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEdldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Cliente/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+[C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Client/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Workspace/C\#/Projetos/ProjetoFinanceiro/ProjetoFinanceiro.Web/Views/Home/Index.cshtml]
