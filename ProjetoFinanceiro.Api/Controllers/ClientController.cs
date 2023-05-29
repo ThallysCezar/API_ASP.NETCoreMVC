@@ -48,7 +48,7 @@ namespace ProjectFinance.Api.Controllers
         {
             try
             {
-                Client client = _clientService.Pesquisar(id);
+                Client client = _clientService.Search(id);
                 DtoClient dto = client != null ? client.ConverterParaDto() : null;
                 return dto;
             }

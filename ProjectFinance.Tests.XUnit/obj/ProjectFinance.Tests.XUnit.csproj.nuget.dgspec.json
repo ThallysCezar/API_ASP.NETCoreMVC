@@ -1,0 +1,380 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Tests.XUnit\\ProjectFinance.Tests.XUnit.csproj": {}
+  },
+  "projects": {
+    "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Tests.XUnit\\ProjectFinance.Tests.XUnit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Tests.XUnit\\ProjectFinance.Tests.XUnit.csproj",
+        "projectName": "ProjectFinance.Tests.XUnit",
+        "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Tests.XUnit\\ProjectFinance.Tests.XUnit.csproj",
+        "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Tests.XUnit\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thallyscezar_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\ProjectFinance.Services.csproj": {
+                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\ProjectFinance.Services.csproj"
+              },
+              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjectFinance.Web.csproj": {
+                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjectFinance.Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.abstractions": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "xunit.assert": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.core": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj",
+        "projectName": "ProjectFinance.Domain",
+        "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj",
+        "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thallyscezar_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj",
+        "projectName": "ProjectFinance.Infrastructure",
+        "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thallyscezar_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj": {
+                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.33, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\ProjectFinance.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\ProjectFinance.Services.csproj",
+        "projectName": "ProjectFinance.Services",
+        "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\ProjectFinance.Services.csproj",
+        "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thallyscezar_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj": {
+                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjectFinance.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjectFinance.Web.csproj",
+        "projectName": "ProjectFinance.Web",
+        "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\ProjectFinance.Web.csproj",
+        "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thallyscezar_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

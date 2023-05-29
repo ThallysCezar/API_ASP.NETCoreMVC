@@ -45,7 +45,7 @@ namespace ProjectFinance.Testes.Services
         {
             Console.WriteLine("\nTeste Camada de Servicos, Validar Pesquisa Cliente");
             int id = 1;
-            Client client = _clientService.Pesquisar(id);
+            Client client = _clientService.Search(id);
             Console.WriteLine($"ID: {client.ClientId}, Nome: {client.Name}");
         }
 
@@ -58,7 +58,7 @@ namespace ProjectFinance.Testes.Services
 
             _clientService.Save(client);
             
-            Client objPesquisa = _clientService.Pesquisar(id);
+            Client objPesquisa = _clientService.Search(id);
             Console.WriteLine($"ID: {objPesquisa.ClientId}, Nome: {objPesquisa.Name}");
         }
 
@@ -66,11 +66,11 @@ namespace ProjectFinance.Testes.Services
         {
             Console.WriteLine("\nTeste Camada de Servicos, Validar Atualizacao Cliente");
             int id = 1;
-            Client client = _clientService.Pesquisar(id);
+            Client client = _clientService.Search(id);
             client.Name = "Gustavo Ricardo";
             _clientService.Update(client);
 
-            Client objPesquisa = _clientService.Pesquisar(id);
+            Client objPesquisa = _clientService.Search(id);
             Console.WriteLine($"ID: {objPesquisa.ClientId}, Nome: {objPesquisa.Name}");
 
         }
@@ -81,7 +81,7 @@ namespace ProjectFinance.Testes.Services
             int id = 12;
             _clientService.Delete(id);
 
-            Client cliente = _clientService.Pesquisar(id);
+            Client cliente = _clientService.Search(id);
         }
     }
 }
