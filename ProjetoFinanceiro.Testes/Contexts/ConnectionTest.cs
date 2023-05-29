@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using MySql.Data.MySqlClient;
-using ProjetoFinanceiro.Infrastructure.Connections;
+using ProjectFinance.Infrastructure.Connections;
 using System.Data;
 
-namespace ProjetoFinanceiro.Testes.Contexts
+namespace ProjectFinance.Testes.Contexts
 {
     public class ConnectionTest
     {

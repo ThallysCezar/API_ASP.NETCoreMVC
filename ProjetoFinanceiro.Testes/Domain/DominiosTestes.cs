@@ -1,8 +1,8 @@
-﻿using ProjetoFinanceiro.Domain.DTOs;
-using ProjetoFinanceiro.Domain.Entities;
-using ProjetoFinanceiro.Testes.Helpers;
+﻿using ProjectFinance.Domain.DTOs;
+using ProjectFinance.Domain.Entities;
+using ProjectFinance.Testes.Helpers;
 
-namespace ProjetoFinanceiro.Testes.Domain
+namespace ProjectFinance.Testes.Domain
 {
     public class DominiosTestes
     {

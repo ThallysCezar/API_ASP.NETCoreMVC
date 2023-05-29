@@ -1,4 +1,4 @@
-﻿namespace ProjetoFinanceiro.Web.Models.DTO
+﻿namespace ProjectFinance.Web.Models.DTO
 {
     public class DtoPeople
     {

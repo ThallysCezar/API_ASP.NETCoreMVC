@@ -1,11 +1,12 @@
 ﻿using MySql.Data.MySqlClient;
-using ProjetoFinanceiro.Domain.Configuration;
-using ProjetoFinanceiro.Domain.Enums;
-using ProjetoFinanceiro.Infrastructure.Connections;
-using ProjetoFinanceiro.Infrastructure.Queries;
+using ProjectFinance.Domain.Configuration;
+using ProjectFinance.Domain.Entities;
+using ProjectFinance.Domain.Enums;
+using ProjectFinance.Infrastructure.Connections;
+using ProjectFinance.Infrastructure.Queries;
 using System.Data;
 
-namespace ProjetoFinanceiro.Infrastructure.Contexts
+namespace ProjectFinance.Infrastructure.Contexts
 {
     public class MySqlContext : IContext
     {
@@ -55,9 +56,9 @@ namespace ProjetoFinanceiro.Infrastructure.Contexts
         #endregion
 
         #region Leitura/Read
-        public List<Domain.Entities.Client> ReadClients()
+        public List<Client> ReadClients()
         {
-            List<Domain.Entities.Client> result = new List<Domain.Entities.Client>();
+            List<Client> result = new List<Client>();
 
             MySqlConnection cn = null;
 

@@ -1,13 +1,13 @@
-﻿using ProjetoFinanceiro.Domain.Entities;
-using ProjetoFinanceiro.Infrastructure.Contexts;
-using ProjetoFinanceiro.Testes.Helpers;
+﻿using ProjectFinance.Domain.Entities;
+using ProjectFinance.Infrastructure.Contexts;
+using ProjectFinance.Testes.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoFinanceiro.Testes.Contexts
+namespace ProjectFinance.Testes.Contexts
 {
     public class FakeContextTeste
     {

@@ -1,7 +1,7 @@
-﻿using ProjetoFinanceiro.Domain.Entities;
-using ProjetoFinanceiro.Infrastructure.Repositories;
+﻿using ProjectFinance.Domain.Entities;
+using ProjectFinance.Infrastructure.Repositories;
 
-namespace ProjetoFinanceiro.Services.Services
+namespace ProjectFinance.Services.Services
 {
     public class ClientService
     {
@@ -12,33 +12,33 @@ namespace ProjetoFinanceiro.Services.Services
             _clientRepository = clientRepository;
         }
 
-        public List<Client> Listar()
+        public List<Client> Get()
         {
-            return _clientRepository.Listar();
+            return _clientRepository.Read();
         }
 
         public Client Pesquisar(int id)
         {
-            return _clientRepository.Pesquisar(id);
+            return _clientRepository.Search(id);
         }
 
-        public void Salvar(Client cliente)
+        public void Save(Client client)
         {
-            _clientRepository.Salvar(cliente);
+            _clientRepository.Save(client);
         }
 
-        public void Atualizar(Client cliente)
+        public void Update(Client client)
         {
-            _clientRepository.Atualizar(cliente);
+            _clientRepository.Update(client);
         }
 
-        public void Excluir(int id)
+        public void Delete(int id)
         {
 
             if (id == 0) 
                 throw new Exception("É necessário informar o Id para realizar a exclusão");
 
-            _clientRepository.Excluir(id);
+            _clientRepository.Delete(id);
         }
     }
 }

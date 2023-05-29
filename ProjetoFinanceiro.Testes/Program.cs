@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ProjetoFinanceiro.Testes.Applications;
-using ProjetoFinanceiro.Testes.Extensions;
+using ProjectFinance.Testes.Applications;
+using ProjectFinance.Testes.Extensions;
 using System;
 
 try

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoFinanceiro.Domain.Configuration
+namespace ProjectFinance.Domain.Configuration
 {
     public interface IApiConfig
     {

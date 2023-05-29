@@ -1,6 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 
-namespace ProjetoFinanceiro.Infrastructure.Connections
+namespace ProjectFinance.Infrastructure.Connections
 {
     public class ConnectionManager
     {

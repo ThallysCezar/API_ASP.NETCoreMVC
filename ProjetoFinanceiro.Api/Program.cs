@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Options;
-using ProjetoFinanceiro.Domain.Configuration;
-using ProjetoFinanceiro.Infrastructure.Repositories;
-using ProjetoFinanceiro.Services.Services;
+using ProjectFinance.Domain.Configuration;
+using ProjectFinance.Infrastructure.Repositories;
+using ProjectFinance.Services.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,11 +1,11 @@
-﻿using ProjetoFinanceiro.Domain.Entities;
+﻿using ProjectFinance.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoFinanceiro.Infrastructure.Contexts
+namespace ProjectFinance.Infrastructure.Contexts
 {
     public class FakeContext : IContext
     {

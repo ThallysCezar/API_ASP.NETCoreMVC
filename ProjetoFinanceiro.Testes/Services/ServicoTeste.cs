@@ -1,8 +1,8 @@
-﻿using ProjetoFinanceiro.Domain.Entities;
-using ProjetoFinanceiro.Services.Services;
-using ProjetoFinanceiro.Testes.Helpers;
+﻿using ProjectFinance.Domain.Entities;
+using ProjectFinance.Services.Services;
+using ProjectFinance.Testes.Helpers;
 
-namespace ProjetoFinanceiro.Testes.Services
+namespace ProjectFinance.Testes.Services
 {
     public class ServicoTeste
     {
@@ -34,7 +34,7 @@ namespace ProjetoFinanceiro.Testes.Services
         private void ValidarListagemClientes()
         {
             Console.WriteLine("\nTeste Camada de Servicos, Validar Listagem Clientes");
-            List<Client> clients = _clientService.Listar();
+            List<Client> clients = _clientService.Get();
             foreach (Client client in clients)
             {
                 Console.WriteLine($"ID: {client.ClientId}, Nome: {client.Name}");

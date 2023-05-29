@@ -1,13 +1,13 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ProjetoFinanceiro.Infrastructure.Repositories;
-using ProjetoFinanceiro.Services.Services;
-using ProjetoFinanceiro.Testes.Applications;
-using ProjetoFinanceiro.Testes.Contexts;
-using ProjetoFinanceiro.Testes.Repositories;
-using ProjetoFinanceiro.Testes.Services;
+using ProjectFinance.Infrastructure.Repositories;
+using ProjectFinance.Services.Services;
+using ProjectFinance.Testes.Applications;
+using ProjectFinance.Testes.Contexts;
+using ProjectFinance.Testes.Repositories;
+using ProjectFinance.Testes.Services;
 
-namespace ProjetoFinanceiro.Testes.Extensions
+namespace ProjectFinance.Testes.Extensions
 {
     public static class ServiceCollectionExtensions
     {

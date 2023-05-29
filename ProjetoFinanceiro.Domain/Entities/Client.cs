@@ -1,6 +1,6 @@
-﻿using ProjetoFinanceiro.Domain.DTOs;
+﻿using ProjectFinance.Domain.DTOs;
 
-namespace ProjetoFinanceiro.Domain.Entities
+namespace ProjectFinance.Domain.Entities
 {
     public class Client
     {

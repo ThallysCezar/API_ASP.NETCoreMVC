@@ -1,6 +1,6 @@
-﻿using ProjetoFinanceiro.Domain.DTOs;
+﻿using ProjectFinance.Domain.DTOs;
 
-namespace ProjetoFinanceiro.Testes.Helpers
+namespace ProjectFinance.Testes.Helpers
 {
     public static class ClienteDtoFactory
     {

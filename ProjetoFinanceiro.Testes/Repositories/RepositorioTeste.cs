@@ -1,15 +1,15 @@
-﻿using ProjetoFinanceiro.Domain.Entities;
-using ProjetoFinanceiro.Infrastructure.Repositories;
+﻿using ProjectFinance.Domain.Entities;
+using ProjectFinance.Infrastructure.Repositories;
 
-namespace ProjetoFinanceiro.Testes.Repositories
+namespace ProjectFinance.Testes.Repositories
 {
     public class RepositorioTeste
     {
-        private readonly IRepositoryClient _clienteRepository;
+        private readonly IRepositoryClient _clientRepository;
 
         public RepositorioTeste(IRepositoryClient clienteRepository)
         {
-            _clienteRepository = clienteRepository;
+            _clientRepository = clienteRepository;
         }
 
         public void Execute()
@@ -32,38 +32,38 @@ namespace ProjetoFinanceiro.Testes.Repositories
 
         private void ValidarListagemClientes()
         {
-            List<Client> clientes = _clienteRepository.Listar();
-            foreach (Client cliente in clientes)
+            List<Client> clients = _clientRepository.Read();
+            foreach (Client client in clients)
             {
-                Console.WriteLine($"ID: {cliente.ClientId}, Name: {cliente.Name}");
+                Console.WriteLine($"ID: {client.ClientId}, Name: {client.Name}");
             }
         }
 
         private void ValidarPesquisaCliente()
         {
             int id = 1;
-            Client cliente = _clienteRepository.Pesquisar(id);
+            Client cliente = _clientRepository.Search(id);
             Console.WriteLine($"ID: {cliente.ClientId}, Name: {cliente.Name}");
         }
 
         private void ValidarCadastroCliente()
         {
-            Client cliente = Helpers.ClienteFactory.GetCliente();
-            int id = cliente.ClientId; ;
+            Client client = Helpers.ClienteFactory.GetCliente();
+            int id = client.ClientId; ;
 
-            _clienteRepository.Salvar(cliente);
-            Client objPesquisa = _clienteRepository.Pesquisar(id);
+            _clientRepository.Save(client);
+            Client objPesquisa = _clientRepository.Search(id);
             Console.WriteLine($"ID: {objPesquisa.ClientId}, Name: {objPesquisa.Name}");
         }
 
         private void ValidarAtualizacaoCliente()
         {
             int id = 1;
-            Client cliente = _clienteRepository.Pesquisar(id);
-            cliente.Name = "Gustavo Ricardo";
-            _clienteRepository.Atualizar(cliente);
+            Client client = _clientRepository.Search(id);
+            client.Name = "Gustavo Ricardo";
+            _clientRepository.Update(client);
 
-            Client objPesquisa = _clienteRepository.Pesquisar(id);
+            Client objPesquisa = _clientRepository.Search(id);
             Console.WriteLine($"ID: {objPesquisa.ClientId}, Name: {objPesquisa.Name}");
 
         }
@@ -71,9 +71,9 @@ namespace ProjetoFinanceiro.Testes.Repositories
         private void ValidarExclusaoCliente()
         {
             int id = 12;
-            _clienteRepository.Excluir(id);
+            _clientRepository.Delete(id);
 
-            Client cliente = _clienteRepository.Pesquisar(id);
+            Client client = _clientRepository.Search(id);
         }
     }
 }

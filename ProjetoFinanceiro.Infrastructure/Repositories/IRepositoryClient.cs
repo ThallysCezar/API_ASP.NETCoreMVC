@@ -1,14 +1,14 @@
-﻿using ProjetoFinanceiro.Domain.Entities;
+﻿using ProjectFinance.Domain.Entities;
 
-namespace ProjetoFinanceiro.Infrastructure.Repositories
+namespace ProjectFinance.Infrastructure.Repositories
 {
     public interface IRepositoryClient
     {
-        public void Salvar(Client cliente);
-        public void Atualizar(Client cliente);
-        public void Excluir(int id);
-        public Client Pesquisar(int id);
-        public List<Client> Listar();
+        public void Save(Client client);
+        public void Update(Client client);
+        public void Delete(int id);
+        public Client Search(int id);
+        public List<Client> Read();
 
     }
 }

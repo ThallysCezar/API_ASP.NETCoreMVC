@@ -1,9 +1,9 @@
-﻿using ProjetoFinanceiro.Testes.Contexts;
-using ProjetoFinanceiro.Testes.Domain;
-using ProjetoFinanceiro.Testes.Repositories;
-using ProjetoFinanceiro.Testes.Services;
+﻿using ProjectFinance.Testes.Contexts;
+using ProjectFinance.Testes.Domain;
+using ProjectFinance.Testes.Repositories;
+using ProjectFinance.Testes.Services;
 
-namespace ProjetoFinanceiro.Testes.Applications
+namespace ProjectFinance.Testes.Applications
 {
     public class AppTestePrincipal
     {

@@ -773,6 +773,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj": "1.0.0",
+          "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj": "1.0.0",
           "MySql.Data": "8.0.33",
           "ProjectFinance.Domain": "1.0.0",
           "System.Data.SqlClient": "4.8.5"
@@ -788,7 +790,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "ProjectFinance.Domain": "1.0.0",
+          "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj": "1.0.0",
+          "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj": "1.0.0",
           "ProjectFinance.Infrastructure": "1.0.0"
         },
         "compile": {
@@ -2624,9 +2627,11 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj",
+      "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Services\\ProjectFinance.Services.csproj",
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Microsoft.Extensions.Configuration.Binder >= 7.0.4",
-      "ProjectFinance.Infrastructure >= 1.0.0",
+      "ProjectFinance.Domain >= 1.0.0",
       "ProjectFinance.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -2665,8 +2670,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj": {
-              "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj"
+            "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj": {
+              "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj"
+            },
+            "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Services\\ProjectFinance.Services.csproj": {
+              "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Services\\ProjectFinance.Services.csproj"
+            },
+            "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj": {
+              "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj"
             },
             "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\ProjectFinance.Services.csproj": {
               "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\ProjectFinance.Services.csproj"
@@ -2719,5 +2730,52 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Services\\ProjectFinance.Services.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Services\\ProjectFinance.Services.csproj",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

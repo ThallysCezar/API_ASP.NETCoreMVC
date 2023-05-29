@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProjetoFinanceiro.Web.Models.DTO;
+using ProjectFinance.Web.Models.DTO;
 
-namespace ProjetoFinanceiro.Web.Controllers
+namespace ProjectFinance.Web.Controllers
 {
     public class PeopleController : Controller
     {

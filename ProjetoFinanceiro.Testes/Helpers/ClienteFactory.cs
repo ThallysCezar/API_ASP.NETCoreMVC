@@ -1,6 +1,6 @@
-﻿using ProjetoFinanceiro.Domain.Entities;
+﻿using ProjectFinance.Domain.Entities;
 
-namespace ProjetoFinanceiro.Testes.Helpers
+namespace ProjectFinance.Testes.Helpers
 {
     public class ClienteFactory
     {

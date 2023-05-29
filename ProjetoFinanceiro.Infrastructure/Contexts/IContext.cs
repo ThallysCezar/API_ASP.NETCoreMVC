@@ -1,6 +1,6 @@
-﻿using ProjetoFinanceiro.Domain.Entities;
+﻿using ProjectFinance.Domain.Entities;
 
-namespace ProjetoFinanceiro.Infrastructure.Contexts
+namespace ProjectFinance.Infrastructure.Contexts
 {
     public interface IContext
     {

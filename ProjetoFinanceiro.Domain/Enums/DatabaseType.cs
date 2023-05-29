@@ -1,4 +1,4 @@
-﻿namespace ProjetoFinanceiro.Domain.Enums
+﻿namespace ProjectFinance.Domain.Enums
 {
     public enum DatabaseType
     {

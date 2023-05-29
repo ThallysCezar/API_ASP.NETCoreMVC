@@ -1,17 +1,21 @@
-﻿using ProjetoFinanceiro.Domain.Configuration;
-using ProjetoFinanceiro.Domain.Entities;
-using ProjetoFinanceiro.Domain.Enums;
-using ProjetoFinanceiro.Domain.Setup;
-using ProjetoFinanceiro.Infrastructure.Contexts;
+﻿using ProjectFinance.Domain.Configuration;
+using ProjectFinance.Domain.Entities;
+using ProjectFinance.Domain.Enums;
+using ProjectFinance.Domain.Setup;
+using ProjectFinance.Infrastructure.Contexts;
 
-namespace ProjetoFinanceiro.Infrastructure.Repositories
+namespace ProjectFinance.Infrastructure.Repositories
 {
     public class RepositoryClient : IRepositoryClient
     {
+        #region Props/ID
+
         private readonly IContext _context;
         private readonly IApiConfig _apiConfig;
 
+        #endregion
 
+        #region Constructor
         public RepositoryClient(IApiConfig apiConfig)
         {
             _apiConfig = apiConfig;
@@ -28,33 +32,50 @@ namespace ProjetoFinanceiro.Infrastructure.Repositories
             }
         }
 
-        public void Atualizar(Client cliente)
+        #endregion
+
+        #region Update
+        public void Update(Client client)
         {
-            _context.UpdateClient(cliente);
+            _context.UpdateClient(client);
         }
 
-        public void Excluir(int id)
+        #endregion
+
+        #region Delete
+        public void Delete(int id)
         {
             _context.DeleteClient(id);
         }
 
-        public List<Client> Listar()
+        #endregion
+
+        #region Read
+        public List<Client> Read()
         {
             return _context.ReadClients();
         }
 
-        public Client Pesquisar(int id)
+        #endregion
+
+        #region Search
+        public Client Search(int id)
         {
             return _context.ReadClients(id);
         }
 
-        public void Salvar(Client cliente)
+        #endregion
+
+        #region Save
+        public void Save(Client client)
         {
             if (ConfiguracoesApp.SELECTED_DATABASE.Equals(DatabaseType.Fake))
             {
-                cliente.ClientId = _context.NextId();
+                client.ClientId = _context.NextId();
             }
-            _context.CreateClient(cliente);
+            _context.CreateClient(client);
         }
+
+        #endregion
     }
 }
