@@ -2003,8 +2003,6 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj",
-      "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj",
       "MySql.Data >= 8.0.33",
       "ProjectFinance.Domain >= 1.0.0",
       "System.Data.SqlClient >= 4.8.5"
@@ -2044,12 +2042,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj": {
-              "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj"
-            },
-            "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj": {
-              "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj"
-            },
             "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj": {
               "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj"
             }
@@ -2094,25 +2086,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  }
 }

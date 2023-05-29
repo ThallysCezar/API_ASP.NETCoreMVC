@@ -54,7 +54,7 @@ namespace ProjectFinance.Web.Controllers
             catch (Exception ex)
             {
                 string message = ex.Message;
-                throw ex;
+                throw ;
             }
         }
 
@@ -62,7 +62,7 @@ namespace ProjectFinance.Web.Controllers
         {
             try
             {
-                ClienteViewModel result = await Pesquisar(id);
+                ClienteViewModel result = await Search(id);
                 return View(result);
             }
             catch (Exception)
@@ -104,7 +104,7 @@ namespace ProjectFinance.Web.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
-            ClienteViewModel client = await Pesquisar(id);
+            ClienteViewModel client = await Search(id);
             return View(client);
         }
 
@@ -136,7 +136,7 @@ namespace ProjectFinance.Web.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            ClienteViewModel client = await Pesquisar(id);
+            ClienteViewModel client = await Search(id);
             if (client == null)
                 return NotFound();
 
@@ -164,7 +164,7 @@ namespace ProjectFinance.Web.Controllers
 
         #region MétodosAuxiliares
 
-        private async Task<ClienteViewModel> Pesquisar(int id)
+        private async Task<ClienteViewModel> Search(int id)
         {
             try
             {

@@ -93,12 +93,6 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj": {
-                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj"
-              },
-              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj": {
-                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj"
-              },
               "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj": {
                 "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj"
               }
@@ -173,12 +167,6 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj": {
-                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj"
-              },
-              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj": {
-                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj"
-              },
               "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj": {
                 "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Infrastructure\\ProjectFinance.Infrastructure.csproj"
               }
@@ -243,15 +231,6 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj": {
-                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj"
-              },
-              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj": {
-                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj"
-              },
-              "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Services\\ProjectFinance.Services.csproj": {
-                "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Services\\ProjectFinance.Services.csproj"
-              },
               "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj": {
                 "projectPath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj"
               },

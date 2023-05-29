@@ -75,7 +75,7 @@ namespace ProjectFinance.Infrastructure.Contexts
 
                 foreach (DataRow register in ds.Tables["consultaCliente"].Rows)
                 {
-                    Domain.Entities.Client cliente = new Domain.Entities.Client
+                    Client cliente = new Client
                     {
                         ClientId = int.Parse(register["cod_cli"].ToString()),
                         Name = register["nome_cli"].ToString(),
@@ -101,10 +101,10 @@ namespace ProjectFinance.Infrastructure.Contexts
             }
         }
 
-        public Domain.Entities.Client ReadClients(int id)
+        public Client ReadClients(int id)
 
         {
-            Domain.Entities.Client result = null;
+            Client result = null;
             MySqlConnection cn = null;
 
             try
@@ -124,7 +124,7 @@ namespace ProjectFinance.Infrastructure.Contexts
 
                 foreach (DataRow item in registros)
                 {
-                    result = new Domain.Entities.Client
+                    result = new Client
                     {
                         ClientId = int.Parse(item["cod_cli"].ToString()),
                         Name = item["nome_cli"].ToString(),
@@ -150,7 +150,7 @@ namespace ProjectFinance.Infrastructure.Contexts
         #endregion
 
         #region Atualizacao/Update
-        public void UpdateClient(Domain.Entities.Client client)
+        public void UpdateClient(Client client)
         {
             MySqlConnection cn = null;
 

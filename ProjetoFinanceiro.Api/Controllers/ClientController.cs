@@ -31,8 +31,8 @@ namespace ProjectFinance.Api.Controllers
         {
             try
             {
-                List<Domain.Entities.Client> client = _clientService.Get();
-                List<DtoClient> clientesDto = client != null ? Domain.Entities.Client.ConverterParaDto(client) : null;
+                List<Client> client = _clientService.Get();
+                List<DtoClient> clientesDto = client != null ? Client.ConverterParaDto(client) : null;
 
                 return clientesDto;
             }
@@ -48,7 +48,7 @@ namespace ProjectFinance.Api.Controllers
         {
             try
             {
-                Domain.Entities.Client client = _clientService.Pesquisar(id);
+                Client client = _clientService.Pesquisar(id);
                 DtoClient dto = client != null ? client.ConverterParaDto() : null;
                 return dto;
             }

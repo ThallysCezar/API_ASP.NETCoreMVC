@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "CtstYrzeA8+GHiGqIH7cyEO3YM+7606//lwdtsJMeOJZgW346MW6XX9msuAfcT+YbB4Mb9LTMmTUQEJiO7/iIA==",
-  "success": false,
+  "dgSpecHash": "DKyVDLnntSAd+UYERO8R60jLX6OAt3UK8GQe7xH8C6apd57RGdJB06La2Xd4is37bTSnR85sOwVcy/P8MbRtDg==",
+  "success": true,
   "projectFilePath": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjetoFinanceiro.Services\\ProjectFinance.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
@@ -41,42 +41,5 @@
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance.Infrastructure\\ProjectFinance.Infrastructure.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjectFinance.Domain\\ProjectFinance.Domain.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Workspace\\C#\\Projetos\\ProjetoFinanceiro\\ProjectFinance\\ProjetoFinanceiro.Domain\\ProjectFinance.Domain.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

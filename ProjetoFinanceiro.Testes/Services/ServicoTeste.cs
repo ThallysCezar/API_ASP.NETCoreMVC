@@ -56,7 +56,7 @@ namespace ProjectFinance.Testes.Services
             Client client = ClienteFactory.GetCliente();
             int id = client.ClientId;
 
-            _clientService.Salvar(client);
+            _clientService.Save(client);
             
             Client objPesquisa = _clientService.Pesquisar(id);
             Console.WriteLine($"ID: {objPesquisa.ClientId}, Nome: {objPesquisa.Name}");
@@ -68,7 +68,7 @@ namespace ProjectFinance.Testes.Services
             int id = 1;
             Client client = _clientService.Pesquisar(id);
             client.Name = "Gustavo Ricardo";
-            _clientService.Atualizar(client);
+            _clientService.Update(client);
 
             Client objPesquisa = _clientService.Pesquisar(id);
             Console.WriteLine($"ID: {objPesquisa.ClientId}, Nome: {objPesquisa.Name}");
@@ -79,7 +79,7 @@ namespace ProjectFinance.Testes.Services
         {
             Console.WriteLine("\nTeste Camada de Servicos, Validar Exclusao Cliente");
             int id = 12;
-            _clientService.Excluir(id);
+            _clientService.Delete(id);
 
             Client cliente = _clientService.Pesquisar(id);
         }

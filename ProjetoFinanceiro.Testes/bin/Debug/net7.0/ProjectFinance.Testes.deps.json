@@ -507,7 +507,6 @@
       },
       "ProjectFinance.Services/1.0.0": {
         "dependencies": {
-          "ProjectFinance.Domain": "1.0.0",
           "ProjectFinance.Infrastructure": "1.0.0"
         },
         "runtime": {
