@@ -84,7 +84,7 @@
                         {
                             if (firstItem)
                             {
-                                <a asp-action="Get" asp-route-id="@item.ClientId" id="btn-details" class="btn btn-secondary">Details</a>
+                                <a asp-action="Get" asp-route-id="@item.ClientId" id="btn-details" class="btn btn-secondary">Read More</a>
                                 firstItem = false;
                             }
                         }
@@ -109,12 +109,10 @@
 
             $("#myModal").modal("show");
 
-            // Fecha o modal quando o botão "Fechar" for clicado
+            // close modal
             $("#myModal .modal-footer button[data-dismiss='modal']").click(function() {
                 $("#myModal").modal("hide");
             });
-
-            // Fecha o modal quando o botão "X" for clicado
             $("#myModal .modal-header button[data-dismiss='modal']").click(function() {
                 $("#myModal").modal("hide");
             });
