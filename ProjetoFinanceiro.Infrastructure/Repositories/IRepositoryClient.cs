@@ -9,6 +9,5 @@ namespace ProjectFinance.Infrastructure.Repositories
         public void Delete(int id);
         public Client Search(int id);
         public List<Client> Read();
-
     }
 }

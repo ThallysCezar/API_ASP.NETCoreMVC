@@ -57,7 +57,7 @@
                 <td>
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <a asp-action="Edit" asp-route-id="@item.ClientId" class="btn btn-primary">Edit</a>
-                        <a asp-action="Get" asp-route-id="@item.ClientId" class="btn btn-secondary">Details</a>
+                        <a href="#" onclick="showClientDetails(this)" data-name="@item.Name" data-cpf="@item.Cpf" data-id="@item.ClientId" class="btn btn-secondary">Details</a>
                         <a asp-action="Delete" asp-route-id="@item.ClientId" class="btn btn-danger">Delete</a>
                     </div>
                 </td>
@@ -65,4 +65,59 @@
     }
         </tbody>
     </table>
+
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn btn-danger btn-sm close-alert" data-dismiss="modal" aria-label="Close">X</button>
+                    <h5 class="modal-title">Client Details</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="client-details"></p>
+                </div>
+                <div class="modal-footer"> 
+                    @if (Model.Any()) 
+                    {
+                        bool firstItem = true;
+                        foreach (var item in Model) 
+                        {
+                            if (firstItem)
+                            {
+                                <a asp-action="Get" asp-route-id="@item.ClientId" id="btn-details" class="btn btn-secondary">Details</a>
+                                firstItem = false;
+                            }
+                        }
+                    }
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
+@section scripts {
+    <script>
+        function showClientDetails(button) {
+            var name = $(button).data("name");
+            var cpf = $(button).data("cpf");
+
+            var clientDetails = "Nome: " + name + "<br>CPF: " + cpf;
+            $("#client-details").html(clientDetails);
+
+            $("#myModal").modal("show");
+
+            // Fecha o modal quando o botão "Fechar" for clicado
+            $("#myModal .modal-footer button[data-dismiss='modal']").click(function() {
+                $("#myModal").modal("hide");
+            });
+
+            // Fecha o modal quando o botão "X" for clicado
+            $("#myModal .modal-header button[data-dismiss='modal']").click(function() {
+                $("#myModal").modal("hide");
+            });
+        }
+    </script>
+}

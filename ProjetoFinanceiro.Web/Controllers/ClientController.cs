@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using ProjectFinance.Infrastructure.Repositories;
 using ProjectFinance.Web.Models;
 using System.Net.Http;
 using System.Text;
@@ -15,6 +16,8 @@ namespace ProjectFinance.Web.Controllers
         private readonly HttpClient _httpClient;
 
         private readonly IConfiguration _configuration;
+
+        private readonly IRepositoryClient _clientRepository;
 
         #endregion Propriedades
 

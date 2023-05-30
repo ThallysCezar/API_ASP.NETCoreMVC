@@ -3767,7 +3767,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.6"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.6",
+          "ProjectFinance.Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ProjectFinance.Web.dll": {}
