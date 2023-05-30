@@ -1,6 +1,4 @@
 ﻿using Moq;
-using MySqlX.XDevAPI;
-using ProjectFinance.Domain.Entities;
 using ProjectFinance.Infrastructure.Repositories;
 using ProjectFinance.Services.Services;
 using Client = ProjectFinance.Domain.Entities.Client;
@@ -27,7 +25,8 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
 
         #region Get
 
-        [Fact]
+        [Fact(DisplayName = "Valid List Customer")]
+        [Trait("Categoria", "Client Trait Tests")]
         public void Get_ReturningAListOfCustomers()
         {
             //Arrange
@@ -52,7 +51,8 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
 
         #region Search
 
-        [Fact]
+        [Fact(DisplayName = "Valid Search")]
+        [Trait("Categoria", "Client Trait Tests")]
         public void Search_ReturnById()
         {
             //Arrange
@@ -74,7 +74,8 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
 
         #region Update
 
-        [Fact]
+        [Fact(DisplayName = "Valid Update")]
+        [Trait("Categoria", "Client Trait Tests")]
         public void Update_ValidClient_CallsClientRepositoryUpdate()
         {
             // Arrange
@@ -91,7 +92,8 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
 
         #region Save
 
-        [Fact]
+        [Fact(DisplayName = "Valid Save")]
+        [Trait("Categoria", "Client Trait Tests")]
         public void Save_ValidClient_CallsClientsRepositorySave()
         {
             //Arrange
@@ -108,7 +110,8 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
 
         #region Delete
 
-        [Fact]
+        [Fact(DisplayName = "Valid Delete")]
+        [Trait("Categoria", "Client Trait Tests")]
         public void Delete_NonZeroId_CallsClientRepositoryDelete()
         {
             // Arrange
@@ -121,7 +124,8 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
             _clientRepositoryMock.Verify(repo => repo.Delete(id), Times.Once);
         }
 
-        [Fact]
+        [Fact(DisplayName = "Delete Throw")]
+        [Trait("Categoria", "Client Trait Tests")]
         public void Delete_ZeroId_ThrowsException()
         {
             // Arrange
