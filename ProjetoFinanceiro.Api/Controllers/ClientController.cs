@@ -85,7 +85,7 @@ namespace ProjectFinance.Api.Controllers
         {
             try
             {
-                Client client = clientDto.ConverterParaEntidade();
+                Client client = clientDto.ToEntity();
                 _clientService.Save(client);
                 return $"Cliente: {client.Name} cadastrado com sucesso, Id: {client.ClientId}";
             }
@@ -104,7 +104,7 @@ namespace ProjectFinance.Api.Controllers
         {
             try
             {
-                Client client = clientDto.ConverterParaEntidade();
+                Client client = clientDto.ToEntity();
                 _clientService.Update(client);
                 return $"Cliente: {client.Name} atualizado com sucesso, Id: {client.ClientId}";
             }

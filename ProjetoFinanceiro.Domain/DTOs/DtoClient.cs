@@ -8,26 +8,25 @@ namespace ProjectFinance.Domain.DTOs
         public string? Name { get; set; }
         public string? Cpf { get; set; }
 
-        public Client ConverterParaEntidade()
+        public Client ToEntity()
         {
             return new Client
             {
-                ClientId = this.ClientId,
-                Name = this.Name,
-                Cpf = this.Cpf
+                ClientId = ClientId,
+                Name = Name,
+                Cpf = Cpf
             };
         }
 
-        public static List<Client> ConverterParaDto(List<DtoClient> dtoClient)
+        public static List<Client> ToDto(List<DtoClient> dtoClient)
         {
             List<Client> clients = new List<Client>();
 
             foreach (DtoClient client in dtoClient)
             {
-                Client entity = client.ConverterParaEntidade();
+                Client entity = client.ToEntity();
                 clients.Add(entity);
             }
-
             return clients;
         }
     }

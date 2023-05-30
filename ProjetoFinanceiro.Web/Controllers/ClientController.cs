@@ -23,7 +23,7 @@ namespace ProjectFinance.Web.Controllers
         public ClientController(IConfiguration configuration)
         {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
-            _endpoint = _configuration["AppConfig:_endpoints:Url_Api"];
+            _endpoint = _configuration["AppConfig:EndPoints:Url_Api"];
 
             _httpClient = new HttpClient
             {
