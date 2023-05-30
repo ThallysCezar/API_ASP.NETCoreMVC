@@ -23,7 +23,7 @@ namespace ProjectFinance.Web.Controllers
 
         #endregion
 
-        #region HELPERS/POPULATION
+        #region Helpers/Population
         private void SeedingPeople()
         {
             _people = new List<DtoPeople>
@@ -50,7 +50,7 @@ namespace ProjectFinance.Web.Controllers
         }
         #endregion
 
-        #region INDEX
+        #region Index
         public IActionResult Index()
         {
             return View(_people);
@@ -58,7 +58,7 @@ namespace ProjectFinance.Web.Controllers
 
         #endregion
 
-        #region CREATE
+        #region Create
         public IActionResult Create()
         {
             return View();
@@ -82,7 +82,7 @@ namespace ProjectFinance.Web.Controllers
 
         #endregion
 
-        #region DELETE
+        #region Delete
 
         [HttpGet]
         public IActionResult DeletePage(string id)
@@ -104,7 +104,7 @@ namespace ProjectFinance.Web.Controllers
 
         #endregion
 
-        #region EDIT
+        #region Edit
 
         [HttpGet]
         public IActionResult Edit(string id)
@@ -128,7 +128,7 @@ namespace ProjectFinance.Web.Controllers
 
         #endregion
 
-        #region DETAILS
+        #region Details
 
         [HttpGet]
         public IActionResult Details(string id)

@@ -1,6 +1,6 @@
 ﻿namespace ProjectFinance.Web.Models
 {
-    public class ClienteViewModel
+    public class ClientViewModel
     {
         public int ClientId { get; set; }
         public string? Name { get; set; }

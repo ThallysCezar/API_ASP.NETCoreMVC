@@ -32,7 +32,7 @@ namespace ProjectFinance.Api.Controllers
             try
             {
                 List<Client> client = _clientService.Get();
-                List<DtoClient> clientesDto = client != null ? Client.ConverterParaDto(client) : null;
+                List<DtoClient> clientesDto = client != null ? Client.ToDto(client) : null;
 
                 return clientesDto;
             }
@@ -49,7 +49,7 @@ namespace ProjectFinance.Api.Controllers
             try
             {
                 Client client = _clientService.Search(id);
-                DtoClient dto = client != null ? client.ConverterParaDto() : null;
+                DtoClient dto = client != null ? client.ToDto() : null;
                 return dto;
             }
             catch (Exception)

@@ -20,7 +20,7 @@ namespace ProjectFinance.Web.Controllers
 
         #endregion
 
-        #region INDEX
+        #region Index
         public IActionResult Index()
         {
             return View();
@@ -28,7 +28,7 @@ namespace ProjectFinance.Web.Controllers
 
         #endregion
 
-        #region ERROR
+        #region Error
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

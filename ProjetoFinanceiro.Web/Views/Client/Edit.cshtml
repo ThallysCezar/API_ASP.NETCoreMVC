@@ -1,40 +1,33 @@
-﻿@model ProjectFinance.Web.Models.ClienteViewModel
+﻿@model ProjectFinance.Web.Models.ClientViewModel
 
 @{
     ViewData["Title"] = "Edit";
 }
+<h1>Client</h1>
 
-<h4>Atualizacao de Cliente</h4>
+<h1 class="display-4">@ViewData["Title"]</h1>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="ClientId" class="control-label"></label>
-                <input asp-for="ClientId" class="form-control" readonly="@(true)"/>
-                <span asp-validation-for="ClientId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cpf" class="control-label"></label>
-                <input asp-for="Cpf" class="form-control" />
-                <span asp-validation-for="Cpf" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Atualizar" class="btn btn-primary" />
-            </div>
-        </form>
+<form asp-action="Edit">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="ClientId" class="control-label"></label>
+        <input asp-for="ClientId" class="form-control" readonly="@(true)"/>
+        <span asp-validation-for="ClientId" class="text-danger"></span>
     </div>
-</div>
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="Cpf" class="control-label"></label>
+        <input asp-for="Cpf" class="form-control" />
+        <span asp-validation-for="Cpf" class="text-danger"></span>
+    </div>
 
-<div>
-    <a asp-action="Index">Voltar</a>
-</div>
+    <input type="submit" value="Save" class="btn btn-primary btn-block"/>
+    <a asp-action="Index" class="btn btn-secondary btn-block" role="button">Back</a>
+</form>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

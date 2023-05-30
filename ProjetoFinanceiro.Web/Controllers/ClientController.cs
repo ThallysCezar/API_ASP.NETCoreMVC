@@ -8,7 +8,7 @@ namespace ProjectFinance.Web.Controllers
 {
     public class ClientController : Controller
     {
-        #region Propriedades
+        #region Props/ID
 
         private readonly string _endpoint;
 
@@ -18,7 +18,7 @@ namespace ProjectFinance.Web.Controllers
 
         #endregion Propriedades
 
-        #region Construtores
+        #region Constructor
 
         public ClientController(IConfiguration configuration)
         {
@@ -31,21 +31,21 @@ namespace ProjectFinance.Web.Controllers
             };
         }
 
-        #endregion Construtores
+        #endregion
 
-        #region Actions
+        #region Index
 
         public async Task<IActionResult> Index()
         {
             try
             {
-                List<ClienteViewModel> clients = null;
+                List<ClientViewModel> clients = null;
 
                 HttpResponseMessage response = await _httpClient.GetAsync(_endpoint);
                 if (response.IsSuccessStatusCode)
                 {
                     string content = await response.Content.ReadAsStringAsync();
-                    clients = JsonConvert.DeserializeObject<List<ClienteViewModel>>(content);
+                    clients = JsonConvert.DeserializeObject<List<ClientViewModel>>(content);
                 }
                 else
                 {
@@ -61,11 +61,15 @@ namespace ProjectFinance.Web.Controllers
             }
         }
 
+        #endregion
+
+        #region Get
+
         public async Task<IActionResult> Get(int id)
         {
             try
             {
-                ClienteViewModel result = await Search(id);
+                ClientViewModel result = await Search(id);
                 return View(result);
             }
             catch (Exception)
@@ -74,13 +78,17 @@ namespace ProjectFinance.Web.Controllers
             }
         }
 
+        #endregion
+
+        #region Create
+
         public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("Name, Cpf")] ClienteViewModel client)
+        public async Task<IActionResult> Create([Bind("Name, Cpf")] ClientViewModel client)
         {
             try
             {
@@ -105,14 +113,18 @@ namespace ProjectFinance.Web.Controllers
             }
         }
 
+        #endregion
+
+        #region Edit
+
         public async Task<IActionResult> Edit(int id)
         {
-            ClienteViewModel client = await Search(id);
+            ClientViewModel client = await Search(id);
             return View(client);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit([Bind("ClientId, Name, Cpf")] ClienteViewModel client)
+        public async Task<IActionResult> Edit([Bind("ClientId, Name, Cpf")] ClientViewModel client)
         {
             try
             {
@@ -137,9 +149,13 @@ namespace ProjectFinance.Web.Controllers
             }
         }
 
+        #endregion
+
+        #region Delete
+
         public async Task<IActionResult> Delete(int id)
         {
-            ClienteViewModel client = await Search(id);
+            ClientViewModel client = await Search(id);
             if (client == null)
                 return NotFound();
 
@@ -163,29 +179,27 @@ namespace ProjectFinance.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        #endregion Actions
+        #endregion
 
-        #region MétodosAuxiliares
+        #region Helpers
 
-        private async Task<ClienteViewModel> Search(int id)
+        private async Task<ClientViewModel> Search(int id)
         {
             try
             {
-                ClienteViewModel result = null;
+                ClientViewModel result = null;
                 string url = $"{_endpoint}{id}";
-                TempData["SuccessMessage"] = "Seller successfully updated!";
                 HttpResponseMessage response = await _httpClient.GetAsync(url);
                 if (response.IsSuccessStatusCode)
                 {
                     string content = await response.Content.ReadAsStringAsync();
-                    result = JsonConvert.DeserializeObject<ClienteViewModel>(content);
+                    result = JsonConvert.DeserializeObject<ClientViewModel>(content);
                 }
 
                 return result;
             }
             catch (Exception)
             {
-                TempData["ErroMessage"] = $"Oops! We could not update the Seller, please try again, error detail: ERROR";
                 throw;
             }
         }
