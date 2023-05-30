@@ -1,7 +1,9 @@
 ﻿using Moq;
+using Bogus;
 using ProjectFinance.Infrastructure.Repositories;
 using ProjectFinance.Services.Services;
 using Client = ProjectFinance.Domain.Entities.Client;
+using Bogus.DataSets;
 
 namespace ProjectFinance.Tests.XUnit._0._1___Services
 {
@@ -29,10 +31,14 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
         [Trait("Categoria", "Client Trait Tests")]
         public void Get_ReturningAListOfCustomers()
         {
+            Faker faker = new Faker();
+            var genero = new Faker().PickRandom<Name.Gender>();
+
+
             //Arrange
             var expectedClientsForList = new List<Client>
             {
-                new Client { ClientId = 1, Name = "John" },
+                new Client { ClientId = faker.Random.Int(), Name = faker.Name.FirstName(genero) },
                 new Client { ClientId = 2, Name = "Jane" }
             };
 
@@ -55,9 +61,11 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
         [Trait("Categoria", "Client Trait Tests")]
         public void Search_ReturnById()
         {
+            Faker faker = new Faker();
+
             //Arrange
-            int clientId = 1;
-            var expectedClient = new Client { ClientId = clientId, Name = "John" };
+            int clientId = 2;
+            var expectedClient = new Client { ClientId = clientId, Name = "Jane" };
 
             _clientRepositoryMock.Setup(repo => repo.Search(clientId)).Returns(expectedClient);
 
@@ -78,6 +86,7 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
         [Trait("Categoria", "Client Trait Tests")]
         public void Update_ValidClient_CallsClientRepositoryUpdate()
         {
+
             // Arrange
             var client = new Client();
 

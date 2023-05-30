@@ -342,3 +342,4 @@ C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjectFinance.Tests.XUnit\bin\Debug\
 C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjectFinance.Tests.XUnit\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjectFinance.Tests.XUnit\bin\Debug\net7.0\ProjectFinance.Web.dll
 C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjectFinance.Tests.XUnit\bin\Debug\net7.0\ProjectFinance.Web.pdb
+C:\Workspace\C#\Projetos\ProjetoFinanceiro\ProjectFinance.Tests.XUnit\bin\Debug\net7.0\Bogus.dll
