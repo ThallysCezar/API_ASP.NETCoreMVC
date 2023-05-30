@@ -6,6 +6,7 @@ This is a test project to create a CRUD (Create, Read, Update, Delete) system fo
 - ASP.NET Core MVC: Used to develop the user interface.
 - MySQL: Used as the database to store the information.
 - ADO.NET: Used for the data access layer, instead of Entity Framework Core, in order to explore the direct use of ADO.NET for learning purposes.
+- XUnit: Used it for unit tests, which I verified the behavior and quality of the code.
 
 The project was developed using a layered architecture, following good development practices. Each layer plays a specific role in the system and contributes to the organization and separation of responsibilities.
 
