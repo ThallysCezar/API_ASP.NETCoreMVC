@@ -11,16 +11,18 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
     {
         #region Props/ID
 
-        private readonly Mock<IRepositoryClient> _clientRepositoryMock;
+        private readonly Mock<IRepositoryClient> _mockRepositoryClient;
         private readonly ClientService _clientService;
+        private readonly Faker _faker;
 
         #endregion
 
         #region Constructor
         public ClientServiceTests()
         {
-            _clientRepositoryMock = new Mock<IRepositoryClient>();
-            _clientService = new ClientService(_clientRepositoryMock.Object);
+            _mockRepositoryClient = new Mock<IRepositoryClient>();
+            _clientService = new ClientService(_mockRepositoryClient.Object);
+            _faker = new Faker();
         }
 
         #endregion
@@ -31,19 +33,17 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
         [Trait("Categoria", "Client Trait Tests")]
         public void Get_ReturningAListOfCustomers()
         {
-            Faker faker = new Faker();
             var genero = new Faker().PickRandom<Name.Gender>();
 
 
             //Arrange
             var expectedClientsForList = new List<Client>
             {
-                new Client { ClientId = faker.Random.Int(), Name = faker.Name.FirstName(genero) },
+                new Client { ClientId = _faker.Random.Int(), Name = _faker.Name.FirstName(genero) },
                 new Client { ClientId = 2, Name = "Jane" }
             };
 
-            _clientRepositoryMock.Setup(repo => repo.Read()).Returns(expectedClientsForList);
-            var _clientService = new ClientService(_clientRepositoryMock.Object);
+            _mockRepositoryClient.Setup(repo => repo.Read()).Returns(expectedClientsForList);
 
             // Act
             var result = _clientService.Get();
@@ -61,18 +61,14 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
         [Trait("Categoria", "Client Trait Tests")]
         public void Search_ReturnById()
         {
-            Faker faker = new Faker();
-
             //Arrange
             int clientId = 2;
             var expectedClient = new Client { ClientId = clientId, Name = "Jane" };
+            _mockRepositoryClient.Setup(repo => repo.Search(clientId)).Returns(expectedClient);
 
-            _clientRepositoryMock.Setup(repo => repo.Search(clientId)).Returns(expectedClient);
-
-            var clientService = new ClientService(_clientRepositoryMock.Object);
 
             // Act
-            var result = clientService.Search(clientId);
+            var result = _clientService.Search(clientId);
 
             // Assert
             Assert.Equal(expectedClient, result);
@@ -94,7 +90,7 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
             _clientService.Update(client);
 
             // Assert
-            _clientRepositoryMock.Verify(repo => repo.Update(client), Times.Once);
+            _mockRepositoryClient.Verify(repo => repo.Update(client), Times.Once);
         }
 
         #endregion
@@ -112,7 +108,7 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
             _clientService.Save(client);
 
             //Asserts
-            _clientRepositoryMock.Verify(repo => repo.Save(client), Times.Once);
+            _mockRepositoryClient.Verify(repo => repo.Save(client), Times.Once);
         }
 
         #endregion
@@ -130,7 +126,7 @@ namespace ProjectFinance.Tests.XUnit._0._1___Services
             _clientService.Delete(id);
 
             // Assert
-            _clientRepositoryMock.Verify(repo => repo.Delete(id), Times.Once);
+            _mockRepositoryClient.Verify(repo => repo.Delete(id), Times.Once);
         }
 
         [Fact(DisplayName = "Delete Throw")]
