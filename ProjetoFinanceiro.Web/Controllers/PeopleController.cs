@@ -7,7 +7,7 @@ namespace ProjectFinance.Web.Controllers
     {
         #region Props
 
-        private static List<DtoPeople> _people = null;
+        private static List<DtoPeople> _people;
 
         #endregion
 
@@ -26,33 +26,28 @@ namespace ProjectFinance.Web.Controllers
         #region HELPERS/POPULATION
         private void SeedingPeople()
         {
-            _people = new List<DtoPeople>();
-
-            DtoPeople pessoa1 = new DtoPeople
+            _people = new List<DtoPeople>
             {
-                Id = Guid.NewGuid().ToString(),
-                Name = "Lucas Ribeirao Preto",
-                Email = "lucas@gmail.com"
+                    new DtoPeople
+                    {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = "Lucas Ribeirao Preto",
+                    Email = "lucas@gmail.com"
+                },
+                new DtoPeople
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = "Grindwald Harry Potter",
+                    Email = "hp@hotmail.com"
+                },
+                new DtoPeople
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = "Woldemort Harry Potter",
+                    Email = "whp@outlook.com"
+                }
             };
-            _people.Add(pessoa1);
-
-            DtoPeople pessoa2 = new DtoPeople
-            {
-                Id = Guid.NewGuid().ToString(),
-                Name = "Grindwald Harry Potter",
-                Email = "hp@hotmail.com"
-            };
-            _people.Add(pessoa2);
-
-            DtoPeople pessoa3 = new DtoPeople
-            {
-                Id = Guid.NewGuid().ToString(),
-                Name = "Woldemort Harry Potter",
-                Email = "whp@outlook.com"
-            };
-            _people.Add(pessoa3);
         }
-
         #endregion
 
         #region INDEX
@@ -70,12 +65,12 @@ namespace ProjectFinance.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([Bind("Name, Email")] DtoPeople people)
+        public IActionResult Create([Bind("Name, Email")] DtoPeople person)
         {
             try
             {
-                people.Id = Guid.NewGuid().ToString();
-                _people.Add(people);
+                person.Id = Guid.NewGuid().ToString();
+                _people.Add(person);
 
                 return RedirectToAction("Index");
             }
@@ -119,13 +114,13 @@ namespace ProjectFinance.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit([Bind("Id, Name, Email")] DtoPeople pessoa)
+        public IActionResult Edit([Bind("Id, Name, Email")] DtoPeople person)
         {
-            DtoPeople pessoaPesquisa = _people.FirstOrDefault(p => p.Id.Equals(pessoa.Id));
+            DtoPeople pessoaPesquisa = _people.FirstOrDefault(p => p.Id.Equals(person.Id));
             if (pessoaPesquisa != null)
             {
                 _people.Remove(pessoaPesquisa);
-                _people.Add(pessoa);
+                _people.Add(person);
             }
 
             return RedirectToAction("Index");
@@ -138,8 +133,8 @@ namespace ProjectFinance.Web.Controllers
         [HttpGet]
         public IActionResult Details(string id)
         {
-            DtoPeople people = _people.FirstOrDefault(p => p.Id.Equals(id));
-            return View(people);
+            DtoPeople person = _people.FirstOrDefault(p => p.Id.Equals(id));
+            return View(person);
         }
 
         #endregion

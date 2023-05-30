@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ProjectFinance.Web.Models;
+using System.Net.Http;
 using System.Text;
 
 namespace ProjectFinance.Web.Controllers
@@ -9,9 +10,9 @@ namespace ProjectFinance.Web.Controllers
     {
         #region Propriedades
 
-        private readonly string ENDPOINT = "";
+        private readonly string _endpoint;
 
-        private readonly HttpClient httpClient = null;
+        private readonly HttpClient _httpClient;
 
         private readonly IConfiguration _configuration;
 
@@ -21,11 +22,13 @@ namespace ProjectFinance.Web.Controllers
 
         public ClientController(IConfiguration configuration)
         {
-            _configuration = configuration;
-            ENDPOINT = _configuration["AppConfig:EndPoints:Url_Api"];
+            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
+            _endpoint = _configuration["AppConfig:_endpoints:Url_Api"];
 
-            httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri(ENDPOINT);
+            _httpClient = new HttpClient
+            {
+                BaseAddress = new Uri(_endpoint)
+            };
         }
 
         #endregion Construtores
@@ -36,25 +39,25 @@ namespace ProjectFinance.Web.Controllers
         {
             try
             {
-                List<ClienteViewModel> clientes = null;
+                List<ClienteViewModel> clients = null;
 
-                HttpResponseMessage response = await httpClient.GetAsync(ENDPOINT);
+                HttpResponseMessage response = await _httpClient.GetAsync(_endpoint);
                 if (response.IsSuccessStatusCode)
                 {
                     string content = await response.Content.ReadAsStringAsync();
-                    clientes = JsonConvert.DeserializeObject<List<ClienteViewModel>>(content);
+                    clients = JsonConvert.DeserializeObject<List<ClienteViewModel>>(content);
                 }
                 else
                 {
-                    ModelState.AddModelError(null, "Erro ao processar a solicitação");
+                    ModelState.AddModelError(null, "Error processing request");
                 }
 
-                return View(clientes);
+                return View(clients);
             }
             catch (Exception ex)
             {
                 string message = ex.Message;
-                throw ;
+                throw;
             }
         }
 
@@ -86,18 +89,18 @@ namespace ProjectFinance.Web.Controllers
                 ByteArrayContent byteArrayContent = new ByteArrayContent(buffer);
                 byteArrayContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
 
-                string url = ENDPOINT;
-                TempData["SuccessMessage"] = "Seller successfully created!";
-                HttpResponseMessage response = await httpClient.PostAsync(url, byteArrayContent);
+                string url = _endpoint;
+                TempData["SuccessMessage"] = "Client successfully created!";
+                HttpResponseMessage response = await _httpClient.PostAsync(url, byteArrayContent);
 
                 if (!response.IsSuccessStatusCode)
-                    ModelState.AddModelError(null, "Erro ao processar a solicitação");
+                    ModelState.AddModelError(null, "Error processing request");
 
                 return RedirectToAction("Index");
             }
             catch (Exception)
             {
-                TempData["ErroMessage"] = $"Oops! We could not create the Seller, please try again, error detail:  ERROR";
+                TempData["ErroMessage"] = $"Oops! We could not create the Client, please try again, error detail:  ERROR";
                 throw;
             }
         }
@@ -118,18 +121,18 @@ namespace ProjectFinance.Web.Controllers
                 ByteArrayContent byteArrayContent = new ByteArrayContent(buffer);
                 byteArrayContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
 
-                string url = ENDPOINT;
-                TempData["SuccessMessage"] = "Seller successfully edited!";
-                HttpResponseMessage response = await httpClient.PutAsync(url, byteArrayContent);
+                string url = _endpoint;
+                TempData["SuccessMessage"] = "Client successfully edited!";
+                HttpResponseMessage response = await _httpClient.PutAsync(url, byteArrayContent);
 
                 if (!response.IsSuccessStatusCode)
-                    ModelState.AddModelError(null, "Erro ao processar a solicitação");
+                    ModelState.AddModelError(null, "Error processing request");
 
                 return RedirectToAction("Index");
             }
             catch (Exception)
             {
-                TempData["ErroMessage"] = $"Oops! We could not edit the Seller, please try again, error detail:  ERROR";
+                TempData["ErroMessage"] = $"Oops! We could not edit the Client, please try again!!";
                 throw;
             }
         }
@@ -147,13 +150,13 @@ namespace ProjectFinance.Web.Controllers
         public async Task<IActionResult> Delete(string ClientId)
         {
             int id = Int32.Parse(ClientId);
-            string url = $"{ENDPOINT}{id}";
-            TempData["SuccessMessage"] = "Seller successfully readed!";
-            HttpResponseMessage response = await httpClient.DeleteAsync(url);
+            string url = $"{_endpoint}{id}";
+            TempData["SuccessMessage"] = "Client successfully deleted!";
+            HttpResponseMessage response = await _httpClient.DeleteAsync(url);
 
             if (!response.IsSuccessStatusCode)
             {
-                TempData["ErroMessage"] = $"Oops! We could not read the Seller, please try again, error detail: ERROR";
+                TempData["ErroMessage"] = $"Oops! We could not delete the client, please try again!!";
                 ModelState.AddModelError(null, "Erro ao processar a solicitação");
             }
 
@@ -169,9 +172,9 @@ namespace ProjectFinance.Web.Controllers
             try
             {
                 ClienteViewModel result = null;
-                string url = $"{ENDPOINT}{id}";
+                string url = $"{_endpoint}{id}";
                 TempData["SuccessMessage"] = "Seller successfully updated!";
-                HttpResponseMessage response = await httpClient.GetAsync(url);
+                HttpResponseMessage response = await _httpClient.GetAsync(url);
                 if (response.IsSuccessStatusCode)
                 {
                     string content = await response.Content.ReadAsStringAsync();

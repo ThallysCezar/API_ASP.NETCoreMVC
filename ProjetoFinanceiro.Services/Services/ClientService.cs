@@ -14,7 +14,7 @@ namespace ProjectFinance.Services.Services
         #region Constructor
         public ClientService(IRepositoryClient clientRepository)
         {
-            _clientRepository = clientRepository;
+            _clientRepository = clientRepository ?? throw new ArgumentNullException(nameof(clientRepository));
         }
 
         #endregion
@@ -54,8 +54,8 @@ namespace ProjectFinance.Services.Services
         #region Delete
         public void Delete(int id)
         {
-            if (id == 0) 
-                throw new Exception("É necessário informar o Id para realizar a exclusão");
+            if (id == 0 && id <= 0) 
+                throw new Exception("It is necessary to inform the Id, in addition to a valid Id, to carry out the deletion");
 
             _clientRepository.Delete(id);
         }
