@@ -24,7 +24,7 @@ Web Layer: The web layer is responsible for the system's user interface (UI). It
 
 ## Features
 
-- Add clients: Allows you to add information about clients, such as name, address, and contact.- 
+- Add clients: Allows you to add information about clients, such as name, address, and contact.
 - Remove clients: Enables you to remove customers from the system.
 - Add collaborators: Allows you to add information about the collaborators, such as name, position, and department.
 - Remove collaborators: Enables you to remove collaborators from the system.
